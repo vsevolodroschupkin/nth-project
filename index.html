@@ -147,20 +147,42 @@
     </section>
   </main>
   <footer class="page-footer">
-    <ul class="page-footer__social-links social-links">
-      <li>
-        <a class="social-links_link social-links_link--insta" href="#" title="Инстаграм"><span class="visually-hidden">Инстаграм</span></a>
-      </li>
-      <li>
-        <a class="social-links_link social-links_link--fb" href="#" title="Фейсбук"><span class="visually-hidden">Фейсбук</span></a>
-      </li>
-      <li>
-        <a class="social-links_link social-links_link--insta" href="#" title="Твиттер"><span class="visually-hidden">Твиттер</span></a>
-      </li>
-    </ul>
-    <div class="page-footer__copyright">
-      Разработано <a class="page-footer__copyright-link" href="http://htmlacademy.ru"><span class="visually-hidden">HTML Академия</span></a>
+    <div class="page-footer__wrapper">
+      <ul class="page-footer__social-links social-links">
+        <li>
+          <a class="social-links_link social-links_link--insta" href="#" title="Инстаграм"><span class="visually-hidden">Инстаграм</span>
+            </a>
+        </li>
+        <li>
+          <a class="social-links_link social-links_link--fb" href="#" title="Фейсбук"><span class="visually-hidden">Фейсбук</span></a>
+        </li>
+        <li>
+          <a class="social-links_link social-links_link--insta" href="#" title="Твиттер"><span class="visually-hidden">Твиттер</span></a>
+        </li>
+      </ul>
+      <div class="page-footer__copyright">
+        Разработано <a class="page-footer__copyright-link" href="http://htmlacademy.ru"><span class="visually-hidden">HTML Академия</span></a>
+      </div>
     </div>
   </footer>
+  <section class="cart-modal modal">
+    <h2 class="cart-modal__title">Добавить в корзину</h2>
+    <form class="cart-modal__form" action="https://echo.htmlacademy.ru" method="POST" name="Добавить в корзину">
+      <fieldset>
+        <legend class="cart-modal__legend">
+          Выберите размер:
+        </legend>
+        <label class="cart-modal__label size-label" for="size-s">
+          <input class="visually-hidden" type="radio" name="size" id="size-s" value="size-s">S
+        </label>
+        <label class="cart-modal__label size-label" for="size-m"><input class="visually-hidden" type="radio" name="size" id="size-m" value="size-m">M
+        </label>
+        <label class="cart-modal__label size-label" for="size-l"><input class="visually-hidden" type="radio" name="size" id="size-l" value="size-l">L
+        </label>
+      </fieldset>
+      <button class="cart-btn" type="submit">Добавить</button>
+    </form>
+  </section>
+  <div class="modal-overlay"></div>
 </body>
 </html>
