@@ -8,11 +8,13 @@
 </head>
 <body>
   <header class="page-header">
-    <a class="page-header__logo">
-      <img class="page-header__logo-image" src="http://placehold.it/117x86" width="117" height="86" alt="Интернет-магазин Mishka">
-    </a>
+    <div class="page-header__block header-nav">
+      <a class="header-nav__logo" href="index.html">
+        <img class="header-nav__logo-image" src="http://placehold.it/117x86" width="117" height="86" alt="Интернет-магазин Mishka">
+      </a>
+      <button class="header-nav__toggle" type="button">Открыть меню</button>
+    </div>
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
@@ -37,10 +39,14 @@
       <h2 class="visually-hidden">Список товаров</h2>
       <ul class="catalog__list">
         <li class="catalog__item card">
-          <img class="card__image" src="http://placehold.it/260x195" width="260" height="195" alt="Зайчик-попрыгайчик">
+          <a class="card__link" href="#">
+            <img class="card__image" src="http://placehold.it/260x195" width="260" height="195" alt="Зайчик-попрыгайчик">
+          </a>
           <div class="card__descr">
             <div class="card__text">
-              <h3 class="card__title"><a href="#" title="Зайчик-попрыгайчик">Зайчик-попрыгайчик</a></h3>
+              <h3 class="card__title">
+                <a href="#" title="Зайчик-попрыгайчик">Зайчик-попрыгайчик</a>
+              </h3>
               <p class="card__props">Рост 30см, вес 200 г</p>
             </div>
             <div class="card__buy">
@@ -50,10 +56,14 @@
           </div>
         </li>
         <li class="catalog__item card">
-          <img class="card__image" src="http://placehold.it/260x195" width="260" height="195" alt="Корзинка для белья">
+          <a class="card__link" href="#">
+            <img class="card__image" src="http://placehold.it/260x195" width="260" height="195" alt="Корзинка для белья">
+          </a>
           <div class="card__descr">
             <div class="card__text">
-              <h3 class="card__title"><a href="#" title="Корзинка для белья">Корзинка для белья</a></h3>
+              <h3 class="card__title">
+                <a href="#" title="Корзинка для белья">Корзинка для белья</a>
+              </h3>
               <p class="card__props">Диаметр 15 см, высота 10 см</p>
             </div>
             <div class="card__buy">
@@ -63,10 +73,14 @@
           </div>
         </li>
         <li class="catalog__item card">
-          <img class="card__image" src="http://placehold.it/260x195" width="260" height="195" alt="Большая корзинка для игрушек">
+          <a class="card__link" href="#">
+            <img class="card__image" src="http://placehold.it/260x195" width="260" height="195" alt="Большая корзинка для игрушек">
+          </a>
           <div class="card__descr">
             <div class="card__text">
-              <h3 class="card__title"><a href="#" title="Большая корзинка для игрушек">Большая корзинка для игрушек</a></h3>
+              <h3 class="card__title">
+                <a href="#" title="Большая корзинка для игрушек">Большая корзинка для игрушек</a>
+              </h3>
               <p class="card__props">Диаметр 30 см, высота 30 см</p>
             </div>
             <div class="card__buy">
