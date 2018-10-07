@@ -4,6 +4,7 @@
 @import 'visually-hidden';
 @import 'main-nav';
 @import 'site-list';
+@import 'page-main';
 @import 'hero';
 @import 'page-title';
 @import 'category-nav';
@@ -22,6 +23,13 @@
 @import 'modal';
 @import 'cart-btn';
 @import 'size-radio';
+@import 'order';
+@import 'form';
+@import 'radio-button-group';
+@import 'radio-button';
+@import 'checkbox-group';
+@import 'checkbox';
+@import 'field';
 
 body {
   min-width: 320px;

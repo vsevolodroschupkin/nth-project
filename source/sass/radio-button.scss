@@ -1,0 +1,16 @@
+.radio-button {
+
+  &__text {
+    font-size:17px;
+    font-weight: 700;
+    line-height: 18px;
+    color: $input-text-color;
+  }
+
+  &__label {
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 18px;
+    color: $input-text-color;
+  }
+}

@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Mishka — вяжем на заказ.</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="../source/css/style.css">
+  <link rel="stylesheet" href="/css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
 </head>
 <body>
@@ -20,22 +20,22 @@
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a href="/catalog.html" title="Каталог товаров">Каталог товаров</a>
+            <a class="site-list__link" href="/catalog.html" title="Каталог товаров">Каталог товаров</a>
           </li>
           <li class="site-list__item">
-            <a title="Вязание на заказ">Вязание на заказ</a>
+            <a class="site-list__link" title="Вязание на заказ">Вязание на заказ</a>
           </li>
           <li class="site-list__item site-list__item--search">
-            <a href="#" title="Поиск по сайту">Поиск по сайту</a>
+            <a class="site-list__link" href="#" title="Поиск по сайту">Поиск по сайту</a>
           </li>
           <li class="site-list__item site-list__item--cart">
-            <a href="#" title="Корзина">Корзина: пока пуста</a>
+            <a class="site-list__link" href="#" title="Корзина">Корзина: пока пуста</a>
           </li>
         </ul>
       </div>
     </nav>
   </header>
-  <main class="page-main">
+  <main class="page-main page-main--inner">
     <h1 class="page-title">Вязание на заказ</h1>
     <section class="order">
       <h2 class="visually-hidden">Оформить заказ</h2>
@@ -45,69 +45,55 @@
           <fieldset class="form__group">
             <legend class="form__group-label">Тип</legend>
             <ul class="radio-button-group">
-              <li class="radio-button-group__item">
-                <label class="radio-button" for="interior">
-                  <input class="radio-button__input" type="radio" name="type" id="interior" value="interior" checked><span class="radio-button__text">Аксессуары для интерьера</span>
-                </label>
+              <li class="radio-button-group__item radio-button">
+                <input class="radio-button__input" type="radio" name="type" id="interior" value="interior" checked>
+                <label class="radio-button__text" for="interior">Аксессуары для интерьера</label>
               </li>
-              <li class="radio-button-group__item">
-                <label class="radio-button" for="toy">
-                  <input class="radio-button__input" type="radio" name="type" id="toy" value="toy"><span class="radio-button__text">Детская игрушка</span>
-                </label>
+              <li class="radio-button-group__item radio-button">
+                <input class="radio-button__input" type="radio" name="type" id="toy" value="toy">
+                <label class="radio-button__text" for="toy">Детская игрушка</label>
               </li>
             </ul>
           </fieldset>
           <fieldset class="form__group">
             <legend class="form__group-label">Цвет</legend>
             <ul class="checkbox-group">
-              <li class="checkbox-group__item">
-                <div class="checkbox">
-                  <input class="checkbox__input" type="checkbox" name="color" id="white" value="white" checked>
-                  <label class="checkbox__label" for="white">Белый</label>
-                </div>
+              <li class="checkbox-group__item checkbox">
+                <input class="checkbox__input" type="checkbox" name="color" id="white" value="white" checked>
+                <label class="checkbox__text" for="white">Белый</label>
               </li>
-              <li class="checkbox-group__item">
-                <div class="checkbox">
-                  <input class="checkbox__input" type="checkbox" name="color" id="grey" value="grey" checked>
-                  <label class="checkbox__label" for="grey">Серый</label>
-                </div>
+              <li class="checkbox-group__item checkbox">
+                <input class="checkbox__input" type="checkbox" name="color" id="grey" value="grey" checked>
+                <label class="checkbox__text" for="grey">Серый</label>
               </li>
-              <li class="checkbox-group__item">
-                <div class="checkbox">
-                  <input class="checkbox__input" type="checkbox" name="color" id="tiffany" value="tiffany">
-                  <label class="checkbox__label" for="tiffany">«Тиффани»</label>
-                </div>
+              <li class="checkbox-group__item checkbox">
+                <input class="checkbox__input" type="checkbox" name="color" id="tiffany" value="tiffany">
+                <label class="checkbox__text" for="tiffany">«Тиффани»</label>
               </li>
-              <li class="checkbox-group__item">
-                <div class="checkbox">
-                  <input class="checkbox__input" type="checkbox" name="color" id="black" value="black">
-                  <label class="checkbox__label" for="black">Черный</label>
-                </div>
+              <li class="checkbox-group__item checkbox">
+                <input class="checkbox__input" type="checkbox" name="color" id="black" value="black">
+                <label class="checkbox__text" for="black">Черный</label>
               </li>
-              <li class="checkbox-group__item">
-                <div class="checkbox">
-                  <input class="checkbox__input" type="checkbox" name="color" id="pink" value="pink">
-                  <label class="checkbox__label" for="pink">Розовый</label>
-                </div>
+              <li class="checkbox-group__item checkbox">
+                <input class="checkbox__input" type="checkbox" name="color" id="pink" value="pink">
+                <label class="checkbox__text" for="pink">Розовый</label>
               </li>
-              <li class="checkbox-group__item">
-                <div class="checkbox">
-                  <input class="checkbox__input" type="checkbox" name="color" id="orange" value="orange">
-                  <label class="checkbox__label" for="orange">Оранжевый</label>
-                </div>
+              <li class="checkbox-group__item checkbox">
+                <input class="checkbox__input" type="checkbox" name="color" id="orange" value="orange">
+                <label class="checkbox__text" for="orange">Оранжевый</label>
               </li>
             </ul>
           </fieldset>
           <fieldset class="form__group">
             <legend class="form__group-label">ФИО</legend>
             <div class="form__field-block">
-              <label class="form__label">Имя:</label>
+              <label class="form__label" for="name">Имя:</label>
               <div class="form__group-field">
                 <input class="field field--text" type="text" id="name" name="name" placeholder="Введите ваше имя*" required>
               </div>
             </div>
             <div class="form__field-block">
-              <label class="form__label">Фамилия:</label>
+              <label class="form__label" for="surname">Фамилия:</label>
               <div class="form__group-field">
                 <input class="field field--text" type="text" id="surname" name="surname" placeholder="Укажите фамилию*" required>
               </div>
@@ -115,12 +101,12 @@
             <div class="form__field-block">
               <label class="form__label" for="fathername">Отчество:</label>
               <div class="form__group-field">
-                <input class="" type="text" id="fathername" name="fathername" placeholder="Отчество, если желаете">
+                <input class="field field--text" type="text" id="fathername" name="fathername" placeholder="Отчество, если желаете">
               </div>
             </div>
           </fieldset>
           <div class="form__group">
-            <label class="form__label" for="tel">Тел</label>
+            <label class="form__group-label" for="tel">Тел</label>
             <div class="form__group-field">
               <input class="field field--phone" type="tel" id="tel" name="tel" placeholder="+7 XXX XXX XX XX*" required>
             </div>
@@ -128,7 +114,7 @@
           <div class="form__group">
             <label class="form__group-label" for="e-mail">E-mail</label>
             <div class="form__group-field">
-              <input class="" type="email" id="e-mail" name="e-mail" placeholder="Ваш e-mail*" required>
+              <input class="field field--email" type="email" id="e-mail" name="e-mail" placeholder="Ваш e-mail*" required>
             </div>
           </div>
           <div class="form__group">
@@ -143,7 +129,6 @@
           </div>
         </div>
       </form>
-
     </section>
   </main>
   <footer class="page-footer">
