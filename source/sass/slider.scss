@@ -1,11 +1,9 @@
 .slider {
-
   &__togglers {
     border: 1px solid $border-color
   }
+
   &__toggler {
-    width:130;
-    height: 52;
     background-color: $white;
   }
 }
