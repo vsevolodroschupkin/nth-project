@@ -1,0 +1,27 @@
+.size-radio {
+
+  &__input:checked + &__label {
+    border-color: $color-accent;
+  }
+
+  &__label {
+    width: 80px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: 2px solid $border-color;
+    display: block;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 16px;
+    text-transform: uppercase;
+    text-align: center;
+
+    &:hover {
+      border-color: $color-main;
+    }
+
+    &:active {
+      border-color: $color-accent;
+    }
+  }
+}

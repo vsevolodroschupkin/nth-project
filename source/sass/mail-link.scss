@@ -1,0 +1,15 @@
+.mail-link {
+  color: $color-main;
+  text-decoration: none;
+  border-bottom: 1px solid $color-accent;
+
+  &:hover,
+  &:focus {
+    color: $color-accent;
+  }
+
+  &:active {
+    color: $mail-link-color--active;
+    border-color: $mail-link-color--active;
+  }
+}

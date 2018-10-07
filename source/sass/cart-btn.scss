@@ -1,0 +1,19 @@
+.cart-btn {
+  width: 260px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border: 2px solid $btn-cart-bg;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 16px;
+  color: $btn-cart-color;
+  text-transform: uppercase;
+  background-color: $btn-cart-bg;
+
+  &:hover,
+  &:focus {
+    color: $btn-cart-color--hover;
+    background-color: $btn-cart-bg--hover;
+  }
+
+}
