@@ -1,7 +1,16 @@
 .page-footer {
+  padding-top: 30px;
+  padding-bottom: 30px;
   background-color: $bg-color-secondary;
 
   &__wrapper {
     margin: 0 auto;
+  }
+
+  &__copyright {
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 17px;
+    color: $title-color;
   }
 }

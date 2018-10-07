@@ -1,0 +1,19 @@
+.production {
+  padding-top: 30px;
+  padding-bottom: 33px;
+  background-color: $bg-color;
+
+  &__title {
+    margin: 0;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 24px;
+    color: $title-color;
+  }
+
+  &__text {
+    margin: 0;
+    font-size: 13px;
+    line-height: 24px;
+  }
+}

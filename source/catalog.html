@@ -5,37 +5,37 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Mishka — каталог игрушек.</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="../source/css/style.css">
+  <link rel="stylesheet" href="/css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
 </head>
 <body>
   <header class="page-header">
-    <div class="page-header__block header-nav">
-      <a class="header-nav__logo" href="index.html">
-        <img class="header-nav__logo-image" src="http://placehold.it/117x86" width="117" height="86" alt="Интернет-магазин Mishka">
-      </a>
-      <button class="header-nav__toggle" type="button">Открыть меню</button>
-    </div>
-    <nav class="main-nav">
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a title="Каталог товаров">Каталог товаров</a>
-          </li>
-          <li class="site-list__item">
-            <a href="/form.html" title="Вязание на заказ">Вязание на заказ</a>
-          </li>
-          <li class="site-list__item site-list__item--search">
-            <a href="#" title="Поиск по сайту">Поиск по сайту</a>
-          </li>
-          <li class="site-list__item site-list__item--cart">
-            <a href="#" title="Корзина">Корзина: пока пуста</a>
-          </li>
-        </ul>
+      <div class="page-header__block header-nav">
+        <a class="header-nav__logo" href="index.html">
+          <img class="header-nav__logo-image" src="http://placehold.it/117x86" width="117" height="86" alt="Интернет-магазин Mishka">
+        </a>
+        <button class="header-nav__toggle" type="button">Открыть меню</button>
       </div>
-    </nav>
-  </header>
-  <main class="page-main">
+      <nav class="main-nav">
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a class="site-list__link" title="Каталог товаров">Каталог товаров</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="/form.html" title="Вязание на заказ">Вязание на заказ</a>
+            </li>
+            <li class="site-list__item site-list__item--search">
+              <a class="site-list__link" href="#" title="Поиск по сайту">Поиск по сайту</a>
+            </li>
+            <li class="site-list__item site-list__item--cart">
+              <a class="site-list__link" href="#" title="Корзина">Корзина: пока пуста</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+  <main class="page-main page-main--inner">
     <h1 class="page-title">Каталог товаров</h1>
     <section class="catalog">
       <h2 class="visually-hidden">Список товаров</h2>
@@ -130,17 +130,22 @@
   <section class="cart-modal modal">
     <h2 class="cart-modal__title">Добавить в корзину</h2>
     <form class="cart-modal__form" action="https://echo.htmlacademy.ru" method="POST" name="add-to-cart">
-      <fieldset>
+      <fieldset class="cart-modal__block">
         <legend class="cart-modal__legend">
           Выберите размер:
         </legend>
-        <label class="cart-modal__label size-label" for="size-s">
-          <input class="visually-hidden" type="radio" name="size" id="size-s" value="size-s">S
-        </label>
-        <label class="cart-modal__label size-label" for="size-m"><input class="visually-hidden" type="radio" name="size" id="size-m" value="size-m">M
-        </label>
-        <label class="cart-modal__label size-label" for="size-l"><input class="visually-hidden" type="radio" name="size" id="size-l" value="size-l">L
-        </label>
+        <div class="cart-modal__radio size-radio">
+          <input class="size-radio__input visually-hidden" type="radio" name="size" id="size-s" value="size-s" checked>
+          <label class="size-radio__label" for="size-s">S</label>
+        </div>
+        <div class="cart-modal__radio size-radio">
+          <input class="size-radio__input visually-hidden" type="radio" name="size" id="size-m" value="size-m">
+          <label class="size-radio__label" for="size-m">M</label>
+        </div>
+        <div class="cart-modal__radio size-radio">
+          <input class="size-radio__input visually-hidden" type="radio" name="size" id="size-l" value="size-l">
+          <label class="size-radio__label" for="size-l">L</label>
+        </div>
       </fieldset>
       <button class="cart-btn" type="submit">Добавить</button>
     </form>
