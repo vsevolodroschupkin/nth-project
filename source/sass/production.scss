@@ -1,6 +1,7 @@
 .production {
   padding-top: 30px;
   padding-bottom: 33px;
+  border: 1px solid $border-color;
   background-color: $bg-color;
 
   &__title {

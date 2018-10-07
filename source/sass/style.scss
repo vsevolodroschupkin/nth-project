@@ -2,11 +2,14 @@
 @import 'variables';
 @import 'mixins';
 @import 'visually-hidden';
+@import 'scaffolding.scss';
+@import 'page-header';
+@import 'header-nav';
 @import 'main-nav';
 @import 'site-list';
 @import 'page-main';
-@import 'hero';
 @import 'page-title';
+@import 'hero';
 @import 'category-nav';
 @import 'category-list';
 @import 'promo-product';
@@ -33,6 +36,14 @@
 @import 'catalog';
 @import 'card';
 @import 'production';
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
 
 body {
   min-width: 320px;

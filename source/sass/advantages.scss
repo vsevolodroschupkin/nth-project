@@ -1,5 +1,6 @@
 .advantages {
   padding-top: 34px;
+  padding-bottom: 30px;
 
   &__wrapper {
     margin: 0 auto;
@@ -17,6 +18,10 @@
     margin: 0;
     padding: 0;
     list-style: none;
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 85px;
   }
 
   &__item-title {
