@@ -1,0 +1,25 @@
+.form {
+  &__group {
+    padding: 0;
+    border: none;
+  }
+
+  &__group-label {
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 16px;
+    color: $color-accent;
+  }
+
+  &__label {
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 18px;
+    color: $input-text-color;
+  }
+
+  &__notice {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}

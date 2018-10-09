@@ -1,0 +1,63 @@
+// Цвета
+$black-lightest:       rgba(0, 0, 0, 0.3);
+$black-light:          rgba(0, 0, 0, 0.6);
+$black:                #000000;
+
+$white-lightest:       rgba(255, 255, 255, 0.3);
+$white-light:          rgba(255, 255, 255, 0.6);
+$white:                #ffffff;
+
+$color-main:           #444444;
+
+$color-accent:         #63d1bb;
+$color-accent--dark:   #56c3b2;
+$color-accent--darken: #46c1ae;
+
+$title-color:            $black;
+$text-color:             $color-main;
+$text-color--accent:     $color-accent;
+
+// Цвета ссылок
+$mail-link-color:        $color-accent--darken;
+$mail-link-color--active: rgba(70, 193, 174, 0.3);
+
+// Цвета фонов
+$bg-color:               $white;
+$bg-color-secondary:     #f1f1f1;
+
+//Цвета главной кнопки
+$btn-main-bg:            $white;
+$btn-main-bg--hover:     $color-main;
+$btn-main-bg--active:    $color-main;
+$btn-main-color:         $color-main;
+$btn-main-color--hover:  $white;
+$btn-main-color--active: $white-lightest;
+$btn-main-border:        $color-main;
+
+// Цвета кнопки добавить
+$btn-cart-bg:            $color-accent;
+$btn-cart-bg--hover:     $white;
+$btn-cart-color:         $white;
+$btn-cart-color--hover:  $color-accent;
+
+//Цвета инпутов
+$input-text-color:       $black;
+$input-border-color:     $black;
+
+
+// Границы
+$border-color:         #ececec;
+
+//Тени
+$shadow-color:         rgba(0, 1, 1, 0.25);
+
+
+// Типографика
+$font-family:            "Open Sans", arial, sans-serif;
+$font-size:              15px;
+$line-height:            24px;
+
+// Размеры экрана
+$screen-s:               320px;
+$screen-m:               768px;
+$screen-l:               1250px;

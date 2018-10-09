@@ -1,0 +1,44 @@
+.promo-product {
+  padding-top: 30px;
+  padding-bottom: 36px;
+
+  &__wrapper {
+    margin: 0 auto;
+  }
+
+  &__title {
+    margin: 0;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 30px;
+    color: $black;
+  }
+
+  &__tag {
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 20px;
+    color: $color-accent;
+  }
+
+  &__desc {
+    margin: 0;
+    line-height: 24px;
+  }
+
+  &__table {
+    line-height: 20px;
+  }
+
+  &__table-row {
+    border-bottom: 1px solid $border-color;
+  }
+
+  &__price {
+    margin: 0;
+    margin-bottom: 28px;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 24px;
+  }
+}

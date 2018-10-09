@@ -1,0 +1,9 @@
+.catalog {
+  background-color: $bg-color;
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+}

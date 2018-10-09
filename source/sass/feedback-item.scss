@@ -1,0 +1,18 @@
+.feedback-item {
+  &__content-block {
+    margin: 0;
+    line-height: 30px;
+  }
+
+  &__author {
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 24px;
+    color: $black;
+  }
+
+  &__account {
+    font-weight: 500;
+    color: $color-main;
+  }
+}

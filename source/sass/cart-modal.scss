@@ -1,0 +1,17 @@
+.cart-modal {
+  padding-top: 36px;
+  padding-bottom: 46px;
+  box-shadow: 0 5px 10px 0 $shadow-color;
+
+  &__block {
+    border: none;
+  }
+
+  &__title {
+    margin: 0;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 30px;
+    color: $title-color;
+  }
+}

@@ -1,0 +1,9 @@
+.slider {
+  &__togglers {
+    border: 1px solid $border-color;
+  }
+
+  &__toggler {
+    background-color: $white;
+  }
+}
