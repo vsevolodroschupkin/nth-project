@@ -8,11 +8,10 @@
     width: 856px;
   }
 
-
   &__togglers {
     border: 1px solid $border-color;
 
-    @media (min-width: $screen-m){
+    @media (min-width: $screen-m) {
       position: absolute;
       bottom: 0;
       right: 0;

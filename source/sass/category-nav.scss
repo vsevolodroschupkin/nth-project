@@ -44,12 +44,12 @@
       background-color: $color-accent--dark;
     }
 
-    @media(min-width: $screen-m) {
+    @media (min-width: $screen-m) {
       width: 334px;
       min-height: 119px;
     }
 
-    @media(min-width: $screen-l) {
+    @media (min-width: $screen-l) {
       width: 525px;
     }
   }

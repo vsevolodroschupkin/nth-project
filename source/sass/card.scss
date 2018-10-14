@@ -14,7 +14,7 @@
 
   &__link {
     display: block;
-    line-height: 0px;
+    line-height: 10px;
   }
 
   &__descr {
@@ -22,7 +22,7 @@
 
     @media (min-width: $screen-m) {
       width: 335px;
-      padding-top:25px;
+      padding-top: 25px;
       padding-left: 28px;
     }
 
@@ -30,7 +30,6 @@
       width: 316px;
       min-height: 197px;
     }
-
   }
 
   &__title {

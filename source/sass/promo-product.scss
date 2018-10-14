@@ -2,12 +2,12 @@
   padding-top: 30px;
   padding-bottom: 36px;
 
-  @media(min-width: $screen-m) {
+  @media (min-width: $screen-m) {
     padding-top: 43px;
     padding-bottom: 53px;
   }
 
-  @media(min-width: $screen-l)  {
+  @media (min-width: $screen-l) {
     padding-top: 117px;
     padding-bottom: 73px;
   }
@@ -17,7 +17,7 @@
     margin: 0 auto;
     position: relative;
 
-    @media(min-width: $screen-m) {
+    @media (min-width: $screen-m) {
       width: 770px;
       padding-left: 50px;
       padding-right: 50px;
@@ -26,13 +26,12 @@
       align-items: flex-start;
     }
 
-    @media(min-width: $screen-l) {
+    @media (min-width: $screen-l) {
       width: 1050px;
       padding-left: 175px;
       padding-right: 100px;
     }
   }
-
 
   &__title {
     margin-top: 0;
@@ -42,14 +41,14 @@
     line-height: 30px;
     color: $black;
 
-    @media(min-width: $screen-m) {
+    @media (min-width: $screen-m) {
       min-width: 420px;
       margin-bottom: 50px;
       font-size: 43px;
       line-height: 50px;
     }
 
-    @media(min-width: $screen-l) {
+    @media (min-width: $screen-l) {
       font-size: 53px;
       line-height: 57px;
     }
@@ -64,7 +63,7 @@
     color: $color-accent;
     text-transform: uppercase;
 
-    @media(min-width: $screen-m) {
+    @media (min-width: $screen-m) {
       width: 70px;
       position: absolute;
       top: 40px;
@@ -73,7 +72,7 @@
       text-align: center;
     }
 
-    @media(min-width: $screen-l) {
+    @media (min-width: $screen-l) {
       left: 147px;
     }
   }
@@ -83,7 +82,7 @@
     margin-bottom: 30px;
     line-height: 24px;
 
-    @media(min-width: $screen-m) {
+    @media (min-width: $screen-m) {
       width: 290px;
       margin-bottom: 50px;
       font-size: 17px;
@@ -95,7 +94,7 @@
     line-height: 20px;
     margin-bottom: 28px;
 
-    @media(min-width: $screen-m) {
+    @media (min-width: $screen-m) {
       width: 290px;
       margin-bottom: 55px;
     }
@@ -113,7 +112,7 @@
     line-height: 24px;
     text-align: center;
 
-    @media(min-width: $screen-m) {
+    @media (min-width: $screen-m) {
       width: 290px;
       font-size: 20px;
       line-height: 24px;
@@ -126,7 +125,7 @@
     margin: 0 auto;
     display: block;
 
-    @media(min-width: $screen-m) {
+    @media (min-width: $screen-m) {
       width: 333px;
       height: 404px;
       position: absolute;
@@ -135,7 +134,7 @@
       z-index: -1;
     }
 
-    @media(min-width: $screen-l) {
+    @media (min-width: $screen-l) {
       width: 525px;
       height: 625px;
       bottom: 73px;

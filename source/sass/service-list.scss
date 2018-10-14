@@ -9,7 +9,7 @@
     display: flex;
   }
 
-  &__item  {
+  &__item {
     @media (min-width: $screen-m) {
       border-left: 1px solid $border-color;
     }

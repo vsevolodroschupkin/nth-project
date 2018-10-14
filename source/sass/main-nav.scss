@@ -4,8 +4,8 @@
   display: flex;
   flex-direction: column;
 
-  &:after {
-    content: 'Бесплатная доставка по России';
+  &::after {
+    content: "Бесплатная доставка по России";
     width: 240px;
     position: absolute;
     right: 100px;
@@ -38,9 +38,9 @@
 
   &__list.site-list {
     @media (min-width: $screen-m) {
-    position: absolute;
-    left: 50px;
-    bottom: -50px;
+      position: absolute;
+      left: 50px;
+      bottom: -50px;
     }
 
     @media (min-width: $screen-l) {

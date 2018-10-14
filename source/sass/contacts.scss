@@ -20,7 +20,7 @@
 
     @media (min-width: $screen-m) {
       width: 770px;
-      padding:0 50px;
+      padding: 0 50px;
     }
 
     @media (min-width: $screen-l) {
@@ -28,7 +28,6 @@
       padding-left: 175px;
       padding-right: 100px;
     }
-
   }
 
   &__title {
