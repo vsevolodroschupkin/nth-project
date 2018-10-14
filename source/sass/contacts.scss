@@ -1,9 +1,34 @@
 .contacts {
   padding-top: 44px;
   padding-bottom: 40px;
+  position: relative;
+
+  @media (min-width: $screen-m) {
+    padding-top: 72px;
+    padding-bottom: 57px;
+  }
+
+  @media (min-width: $screen-l) {
+    min-height: 633px;
+    padding-top: 152px;
+    padding-bottom: 105px;
+  }
 
   &__wrapper {
     margin: 0 auto;
+    padding: 0 30px;
+
+    @media (min-width: $screen-m) {
+      width: 770px;
+      padding:0 50px;
+    }
+
+    @media (min-width: $screen-l) {
+      width: 1050px;
+      padding-left: 175px;
+      padding-right: 100px;
+    }
+
   }
 
   &__title {
@@ -12,5 +37,41 @@
     font-weight: 700;
     line-height: 30px;
     color: $black;
+  }
+
+  &__table tbody {
+    @media (min-width: $screen-m) {
+      display: flex;
+    }
+
+    @media (min-width: $screen-l) {
+      flex-direction: column;
+    }
+  }
+
+  &__map {
+    margin: 0 auto;
+    display: block;
+
+    @media (min-width: $screen-m) {
+      width: 100%;
+      height: 457px;
+    }
+
+    @media (min-width: $screen-l) {
+      width: 525px;
+      height: 457px;
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
+
+  &__btn {
+    margin: 0 auto;
+
+    @media (min-width: $screen-l) {
+      margin-left: 0;
+    }
   }
 }

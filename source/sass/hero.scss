@@ -1,11 +1,20 @@
 .hero {
+  min-height: 489px;
   padding-top: 76px;
+  display: flex;
+  flex-direction: column;
   background-image: url("../img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-position: center top;
   background-color: $bg-color-secondary;
+
+  @media (min-width: $screen-m) {
+    min-height: 746px;
+  }
 
   &__title {
     margin-bottom: 120px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }

@@ -1,5 +1,37 @@
 .card {
-  border: 1px solid $border-color;
+  width: 260px;
+
+  @media (min-width: $screen-m) {
+    width: 670px;
+    min-height: 334px;
+    display: flex;
+  }
+
+  @media (min-width: $screen-l) {
+    width: 316px;
+    flex-direction: column;
+  }
+
+  &__link {
+    display: block;
+    line-height: 0px;
+  }
+
+  &__descr {
+    border: 1px solid $border-color;
+
+    @media (min-width: $screen-m) {
+      width: 335px;
+      padding-top:25px;
+      padding-left: 28px;
+    }
+
+    @media (min-width: $screen-l) {
+      width: 316px;
+      min-height: 197px;
+    }
+
+  }
 
   &__title {
     margin: 0;

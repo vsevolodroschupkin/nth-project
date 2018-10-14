@@ -2,8 +2,33 @@
   padding-top: 30px;
   padding-bottom: 45px;
 
+  @media (min-width: $screen-m) {
+    padding-top: 86px;
+    padding-bottom: 70px;
+  }
+
+  @media (min-width: $screen-l) {
+    padding-top: 80px;
+    padding-bottom: 67px;
+  }
+
   &__wrapper {
     margin: 0 auto;
+    padding: 0 30px;
+    position: relative;
+
+    @media(min-width: $screen-m) {
+      width: 770px;
+      padding: 0 50px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    @media (min-width: $screen-l) {
+      width: 1050px;
+      padding-left: 175px;
+      padding-right: 100px;
+    }
   }
 
   &__title {
@@ -12,5 +37,13 @@
     font-weight: 700;
     line-height: 30px;
     color: $black;
+  }
+
+  &__btn {
+    @media (min-width: $screen-m) {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
   }
 }

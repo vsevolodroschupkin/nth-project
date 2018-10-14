@@ -6,6 +6,37 @@
   list-style: none;
   background-color: $white;
 
+  @media (min-width: $screen-m) {
+    display: flex;
+    align-items: center;
+    border: none;
+    background-color: transparent;
+  }
+
+  &__item {
+    position: relative;
+
+    &:first-child {
+      @media (min-width: $screen-m) {
+        margin-right: 37px;
+      }
+
+      @media (min-width: $screen-l) {
+        padding-right: 35px;
+        margin-right: 0;
+        border-right: 1px solid $border-color;
+      }
+    }
+
+    &:last-child {
+      @media (min-width: $screen-l) {
+        padding-left: 35px;
+      }
+    }
+
+  }
+
+
   &__link {
     padding-top: 32px;
     padding-bottom: 30px;
@@ -16,7 +47,7 @@
     font-weight: 700;
     line-height: 24px;
     text-decoration: none;
-    color: $black;
+    color: $title-color;
 
     &:hover {
       color: $black-light;
@@ -24,6 +55,45 @@
 
     &:active {
       color: $black-lightest;
+    }
+
+    @media (min-width: $screen-m) {
+      border-bottom: none;
+      padding: 0;
+    }
+
+    @media (min-width: $screen-l) {
+      padding-top: 35px;
+      padding-bottom: 35px;
+    }
+  }
+
+  &__dropdown {
+    margin: 0;
+    padding: 0;
+    display: none;
+    list-style: none;
+
+    & a {
+      font-size: 15px;
+      font-weight: 700;
+      line-height: 24px;
+      color: $title-color;
+      text-decoration: none;
+    }
+
+    @media (min-width: $screen-l) {
+      min-width: 320px;
+      display: flex;
+      position: absolute;
+      bottom: -50px;
+      left: 0;
+    }
+  }
+
+  &__dropdown-item {
+    &:first-child {
+      margin-right: 60px;
     }
   }
 }

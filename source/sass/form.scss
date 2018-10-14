@@ -1,14 +1,96 @@
 .form {
-  &__group {
-    padding: 0;
+  @media (min-width: $screen-m) {
+    padding-bottom: 50px;
+  }
+
+  &__fieldset {
     border: none;
+    padding: 0;
+  }
+
+  &__group {
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 0 auto;
+    border: none;
+
+    &--tel {
+      margin-bottom: 20px;
+    }
+
+    @media (min-width: $screen-m) {
+      width: 770px;
+      padding-left: 50px;
+      padding-right: 50px;
+      display: flex;
+    }
+
+    @media (min-width: $screen-l) {
+      width: 1150px;
+      padding-left: 175px;
+    }
+  }
+
+  &__controls {
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 0 auto;
+    border: none;
+
+    @media (min-width: $screen-m) {
+      width: 770px;
+      padding-left: 50px;
+      padding-right: 50px;
+      display: flex;
+      align-items: center;
+    }
+
+    @media (min-width: $screen-l) {
+      width: 1150px;
+      padding-left: 340px;
+    }
+  }
+
+  &__section {
+    margin-bottom: 30px;
+
+    &:nth-child(2n) {
+      @media (min-width: $screen-m) {
+        background-color: $bg-color-secondary;
+      }
+    }
+
+    @media (min-width: $screen-m) {
+      margin-bottom: 0;
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
   }
 
   &__group-label {
+    margin-bottom: 25px;
     font-size: 17px;
     font-weight: 700;
     line-height: 16px;
     color: $color-accent;
+
+    @media (min-width: $screen-m) {
+      width: 167px;
+    }
+  }
+
+  &__group-field {
+    @media (min-width: $screen-m) {
+      width: 500px;
+    }
+
+    @media (min-width: $screen-l) {
+      flex-grow: 1;
+    }
   }
 
   &__label {
@@ -21,5 +103,30 @@
   &__notice {
     font-size: 14px;
     line-height: 16px;
+
+    @media (min-width: $screen-m) {
+      order: 2;
+      margin-left: auto;
+    }
+  }
+
+  &__field-block {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+
+    @media (min-width: $screen-l) {
+      display: flex;
+    }
+  }
+
+  &__btn {
+    width: 100%;
+
+    @media (min-width: $screen-m) {
+      width: 230px;
+      margin-right: 138px;
+      order: 1;
+    }
   }
 }

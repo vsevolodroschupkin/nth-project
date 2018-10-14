@@ -1,0 +1,61 @@
+.main-nav {
+  min-height: 79px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  &:after {
+    content: 'Бесплатная доставка по России';
+    width: 240px;
+    position: absolute;
+    right: 100px;
+    bottom: -45px;
+    display: none;
+    text-align: right;
+
+    @media (min-width: $screen-l) {
+      display: block;
+    }
+  }
+
+  @media (min-width: $screen-m) {
+    width: 770px;
+    padding: 0 50px;
+    margin: 0 auto;
+    flex-direction: row;
+  }
+
+  @media (min-width: $screen-l) {
+    width: 1250px;
+    padding: 0 100px;
+  }
+
+  &__block {
+    @media (min-width: $screen-l) {
+      order: 2;
+    }
+  }
+
+  &__list.site-list {
+    @media (min-width: $screen-m) {
+    position: absolute;
+    left: 50px;
+    bottom: -50px;
+    }
+
+    @media (min-width: $screen-l) {
+      margin-right: 75px;
+      position: relative;
+      bottom: 0;
+      left: 0;
+      order: 1;
+    }
+  }
+
+  &__list.service-list {
+    @media (min-width: $screen-l) {
+      position: relative;
+      order: 3;
+    }
+  }
+}

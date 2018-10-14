@@ -1,9 +1,20 @@
 .page-title {
   margin: 0;
-
   font-size: 27px;
   font-weight: 700;
   line-height: 30px;
-  color: $black;
+  color: $title-color;
   text-align: center;
+
+  @media (min-width: $screen-m) {
+    max-width: 700px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $screen-l) {
+    max-width: 1050px;
+    font-size: 53px;
+    line-height: 57px;
+  }
 }

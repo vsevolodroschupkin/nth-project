@@ -1,0 +1,27 @@
+.inner-page-main {
+  padding-top: 70px;
+  background-color: $bg-color-secondary;
+
+  @media (min-width: $screen-m) {
+    padding-top: 106px;
+  }
+
+  &__title {
+    margin-bottom: 70px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__content {
+    padding-top: 30px;
+    padding-bottom: 58px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $bg-color;
+
+    @media (min-width: $screen-m) {
+      padding-bottom: 63px;
+    }
+  }
+}

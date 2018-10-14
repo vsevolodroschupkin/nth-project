@@ -1,9 +1,40 @@
 .catalog {
+  padding-left: 30px;
+  padding-right: 30px;
+  margin: 0 auto;
   background-color: $bg-color;
+
+  @media (min-width: $screen-m) {
+    width: 770px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  @media (min-width: $screen-l) {
+    width: 1150px;
+    margin-bottom: 57px;
+  }
 
   &__list {
     margin: 0;
     padding: 0;
     list-style: none;
+
+    @media (min-width: $screen-l) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__item {
+    margin-bottom: 30px;
+
+    @media (min-width: $screen-m) {
+      margin-bottom: 54px;
+    }
+
+    @media (min-width: $screen-l) {
+      margin-bottom: 0;
+    }
   }
 }

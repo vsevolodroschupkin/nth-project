@@ -2,8 +2,36 @@
   padding-top: 34px;
   padding-bottom: 30px;
 
+  @media(min-width: $screen-m) {
+    padding-top: 60px;
+    padding-bottom: 80px;
+  }
+
+  @media(min-width: $screen-l) {
+    padding-top: 70px;
+    padding-bottom: 90px;
+  }
+
   &__wrapper {
     margin: 0 auto;
+    padding: 0 30px;
+
+    @media(min-width: $screen-m) {
+      width: 770px;
+      padding: 0 50px;
+    }
+
+    @media(min-width: $screen-l) {
+      width: 1050px;
+      padding-left: 175px;
+      padding-right: 100px;
+    }
+  }
+
+  &__list-wrapper {
+    @media(min-width: $screen-m){
+      display: flex;
+    }
   }
 
   &__title {
