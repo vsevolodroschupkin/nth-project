@@ -1,7 +1,6 @@
 .page-header {
   min-height: 80px;
-  box-shadow: 0px 1px 0px 0px #ececec,
-    inset 0px 1px 0px 0px #ececec;
+  border-bottom: 1px solid #ececec;
   background-color: $bg-color;
 
   @media (min-width: $screen-m) {
