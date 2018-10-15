@@ -27,7 +27,7 @@
     align-items: center;
 
     @media (min-width: $screen-m) {
-      margin-right: 209px;
+      margin-right: 205px;
       width: 112px;
       height: 46px;
     }
@@ -41,8 +41,54 @@
 
   &__toggle {
     position: absolute;
-    top: 0;
-    right: 0;
+    border: none;
+    background-color: $title-color;
+
+    &--opened {
+      width: 25px;
+      height: 2px;
+      top: 38px;
+      right: 28px;
+      transform: rotate(45deg);
+
+      &::before {
+        content: "";
+        width: 25px;
+        height: 2px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: $title-color;
+        transform: rotate(90deg);
+      }
+    }
+
+    &--closed {
+      width: 20px;
+      height: 2px;
+      top: 32px;
+      right: 30px;
+
+      &::before {
+        content: "";
+        width: 20px;
+        height: 2px;
+        position: absolute;
+        top: 6px;
+        left: 0;
+        background-color: $title-color;
+      }
+
+      &::after {
+        content: "";
+        width: 20px;
+        height: 2px;
+        position: absolute;
+        top: 12px;
+        left: 0;
+        background-color: $title-color;
+      }
+    }
 
     @media (min-width: $screen-m) {
       display: none;

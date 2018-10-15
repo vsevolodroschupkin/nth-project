@@ -1,4 +1,6 @@
 .slider {
+  position: relative;
+
   @media (min-width: $screen-m) {
     width: 642px;
     display: flex;

@@ -13,13 +13,12 @@
   }
 
   &__wrapper {
+    width: 80%;
     margin: 0 auto;
-    padding: 0 30px;
     position: relative;
 
     @media (min-width: $screen-m) {
-      width: 770px;
-      padding: 0 50px;
+      width: 668px;
       display: flex;
       flex-direction: column;
     }
@@ -27,7 +26,6 @@
     @media (min-width: $screen-l) {
       width: 1050px;
       padding-left: 175px;
-      padding-right: 100px;
     }
   }
 
@@ -43,7 +41,7 @@
     @media (min-width: $screen-m) {
       position: absolute;
       top: 0;
-      right: 0;
+      right: 20px;
     }
   }
 }

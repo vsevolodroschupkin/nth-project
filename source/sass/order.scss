@@ -11,26 +11,21 @@
   }
 
   &__text {
+    width: 80%;
     margin-top: 0;
     margin-bottom: 30px;
     margin-left: auto;
     margin-right: auto;
-    padding-right: 30px;
-    padding-left: 30px;
     font-size: 13px;
 
     @media (min-width: $screen-m) {
-      width: 770px;
-      padding-left: 50px;
-      padding-right: 100px;
+      width: 675px;
       margin-bottom: 10px;
     }
 
     @media (min-width: $screen-l) {
-      width: 1150px;
-      padding-left: 225px;
-      padding-right: 225px;
-      margin-bottom: 10px;
+      width: 675px;
+      padding-left: 110px;
     }
   }
 }

@@ -9,10 +9,9 @@
   }
 
   &__group {
+    width: 80%;
     padding-top: 0;
     padding-bottom: 0;
-    padding-left: 30px;
-    padding-right: 30px;
     margin: 0 auto;
     border: none;
 
@@ -21,36 +20,31 @@
     }
 
     @media (min-width: $screen-m) {
-      width: 770px;
-      padding-left: 50px;
-      padding-right: 50px;
+      width: 668px;
       display: flex;
     }
 
     @media (min-width: $screen-l) {
-      width: 1150px;
+      width: 1050px;
       padding-left: 175px;
     }
   }
 
   &__controls {
+    width: 80%;
     padding-top: 0;
     padding-bottom: 0;
-    padding-left: 30px;
-    padding-right: 30px;
     margin: 0 auto;
     border: none;
 
     @media (min-width: $screen-m) {
-      width: 770px;
-      padding-left: 50px;
-      padding-right: 50px;
+      width: 668px;
       display: flex;
       align-items: center;
     }
 
     @media (min-width: $screen-l) {
-      width: 1150px;
+      width: 1050px;
       padding-left: 340px;
     }
   }
@@ -80,6 +74,10 @@
 
     @media (min-width: $screen-m) {
       width: 167px;
+    }
+
+    @media (min-width: $screen-l) {
+      width: 110px;
     }
   }
 
@@ -125,7 +123,6 @@
 
     @media (min-width: $screen-m) {
       width: 230px;
-      margin-right: 138px;
       order: 1;
     }
   }

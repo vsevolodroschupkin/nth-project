@@ -13,18 +13,16 @@
   }
 
   &__wrapper {
+    width: 80%;
     margin: 0 auto;
-    padding: 0 30px;
 
     @media (min-width: $screen-m) {
-      width: 770px;
-      padding: 0 50px;
+      width: 668px;
     }
 
     @media (min-width: $screen-l) {
       width: 1050px;
       padding-left: 175px;
-      padding-right: 100px;
     }
   }
 

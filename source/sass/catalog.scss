@@ -1,17 +1,14 @@
 .catalog {
-  padding-left: 30px;
-  padding-right: 30px;
+  width: 80%;
   margin: 0 auto;
   background-color: $bg-color;
 
   @media (min-width: $screen-m) {
-    width: 770px;
-    padding-left: 50px;
-    padding-right: 50px;
+    width: 668px;
   }
 
   @media (min-width: $screen-l) {
-    width: 1150px;
+    width: 1050px;
     margin-bottom: 57px;
   }
 
@@ -19,9 +16,12 @@
     margin: 0;
     padding: 0;
     list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     @media (min-width: $screen-l) {
-      display: flex;
+      flex-direction: row;
       justify-content: space-between;
     }
   }

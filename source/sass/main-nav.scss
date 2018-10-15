@@ -4,30 +4,36 @@
   display: flex;
   flex-direction: column;
 
-  &::after {
-    content: "Бесплатная доставка по России";
-    width: 240px;
-    position: absolute;
-    right: 100px;
-    bottom: -45px;
-    display: none;
-    text-align: right;
+  &--closed .main-nav__list {
+    @media (max-width: $screen-s-only) {
+      display: none;
+    }
+  }
 
-    @media (min-width: $screen-l) {
+  &--opened .main-nav__list {
+    @media (max-width: $screen-s-only) {
       display: block;
     }
   }
 
+  &--nojs {
+    & .header-nav__toggle {
+      display: none;
+    }
+
+    & .main-nav__list {
+      display: flex;
+    }
+  }
+
   @media (min-width: $screen-m) {
-    width: 770px;
-    padding: 0 50px;
+    width: 668px;
     margin: 0 auto;
     flex-direction: row;
   }
 
   @media (min-width: $screen-l) {
-    width: 1250px;
-    padding: 0 100px;
+    width: 1050px;
   }
 
   &__block {
@@ -39,8 +45,8 @@
   &__list.site-list {
     @media (min-width: $screen-m) {
       position: absolute;
-      left: 50px;
-      bottom: -50px;
+      left: 0;
+      bottom: -43px;
     }
 
     @media (min-width: $screen-l) {
@@ -56,6 +62,23 @@
     @media (min-width: $screen-l) {
       position: relative;
       order: 3;
+    }
+  }
+
+  &__notice {
+    width: 240px;
+    position: absolute;
+    display: none;
+    text-align: right;
+
+    @media (min-width: $screen-m) {
+      display: block;
+      right: 0;
+      bottom: -43px;
+    }
+
+    @media (min-width: $screen-l) {
+      right: 0;
     }
   }
 }
