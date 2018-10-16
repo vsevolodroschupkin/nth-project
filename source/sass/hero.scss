@@ -1,11 +1,39 @@
 .hero {
-  padding-top: 76px;
+  min-height: 489px;
+  padding-top: 70px;
+  display: flex;
   background-image: url("../img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-position: center top;
   background-color: $bg-color-secondary;
 
+  @media (min-width: $screen-m) {
+    min-height: 746px;
+    padding-top: 153px;
+  }
+
+  &__wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: $screen-m) {
+      width: 668px;
+      margin: 0 auto;
+    }
+
+    @media (min-width: $screen-m) {
+      width: 1050px;
+    }
+  }
+
   &__title {
-    margin-bottom: 120px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media (min-width: $screen-m) {
+      width: 60%;
+    }
   }
 }

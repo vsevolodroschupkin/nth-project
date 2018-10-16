@@ -1,19 +1,81 @@
 .production {
-  padding-top: 30px;
-  padding-bottom: 33px;
-  border: 1px solid $border-color;
+  margin: 0 auto;
+  position: relative;
   background-color: $bg-color;
 
+  &__wrapper {
+    width: 260px;
+    padding-top: 30px;
+    padding-bottom: 33px;
+    padding-left: 34px;
+    padding-right: 34px;
+    border: 1px solid $border-color;
+
+    @media (min-width: $screen-m) {
+      width: 668px;
+      margin-top: 455px;
+    }
+
+    @media (min-width: $screen-l) {
+      width: 367px;
+      padding-top: 100px;
+      padding-left: 80px;
+      padding-bottom: 60px;
+      padding-right: 57px;
+      margin-left: 682px;
+      margin-top: 0;
+    }
+  }
+
+
   &__title {
-    margin: 0;
+    margin-top: 0;
+    margin-bottom: 20px;
+    padding-left: 57px;
     font-size: 17px;
     font-weight: 700;
     line-height: 24px;
     color: $title-color;
+
+    @media (min-width: $screen-l) {
+      padding-left: 0;
+    }
+  }
+
+  &__video-container {
+    margin-left: -35px;
+    margin-right: -35px;
+    margin-bottom: 30px;
+    position: relative;
+
+    @media (min-width: $screen-m) {
+      width: 668px;
+      height: 455px;
+      margin: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    @media (min-width: $screen-l) {
+      width: 682px;
+    }
+  }
+
+  &__video-button {
+    width: 100px;
+    height: 77px;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -38px;
+    margin-left: -50px;
   }
 
   &__text {
-    margin: 0;
+    margin-top: 0;
+    margin-bottom: 30px;
     font-size: 13px;
     line-height: 24px;
   }

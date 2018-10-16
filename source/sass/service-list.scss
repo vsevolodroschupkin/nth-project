@@ -1,0 +1,122 @@
+.service-list {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  list-style: none;
+  background-color: $bg-color;
+  flex-direction: column;
+
+  @media (min-width: $screen-m) {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__item {
+    @media (min-width: $screen-m) {
+      border-left: 1px solid $border-color;
+    }
+  }
+
+  &__link {
+    padding-top: 27px;
+    padding-bottom: 27px;
+    padding-left: 75px;
+    display: block;
+    border-bottom: 1px solid $border-color;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 24px;
+    text-decoration: none;
+    color: $black;
+
+
+    &:hover {
+      color: $black-light;
+    }
+
+    &:active {
+      color: $black-lightest;
+    }
+
+    @media (min-width: $screen-m) {
+      border-bottom: none;
+      padding-top: 35px;
+      padding-bottom: 35px;
+    }
+
+    &--search {
+      position: relative;
+
+      &:hover .service-list__search-icon path {
+        fill: $color-accent--dark;
+        opacity: 1;
+      }
+
+      &:active .service-list__search-icon path {
+        opacity: 0.3;
+      }
+
+      @media (min-width: $screen-m) {
+        width: 82px;
+        height: 88px;
+      }
+    }
+
+    &--search span {
+      @media (min-width: $screen-m) {
+        display: none;
+      }
+    }
+
+    &--cart {
+      position: relative;
+
+      &:hover .service-list__cart-icon path {
+        fill: $color-accent--dark;
+        opacity: 1;
+      }
+
+      &:active .service-list__cart-icon path {
+        fill: $color-accent--dark;
+        opacity: 0.3;
+      }
+
+      @media (min-width: $screen-m) {
+        height: 88px;
+        padding-left: 83px;
+      }
+    }
+  }
+
+  &__search-icon {
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: 30px;
+    left: 32px;
+
+    & path {
+      opacity: 0.2;
+    }
+
+    @media (min-width: $screen-m) {
+      top: 40px;
+    }
+  }
+
+  &__cart-icon {
+    width: 21px;
+    height: 18px;
+    position: absolute;
+    top: 30px;
+    left: 32px;
+
+    & path {
+      opacity: 0.2;
+    }
+
+    @media (min-width: $screen-m) {
+      top: 40px;
+    }
+  }
+}

@@ -2,6 +2,18 @@ html {
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "Open Sans";
+  src: url("/source/fonts/opensans.woff2") format("woff2"),
+    url("/source/fonts/opensans.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Open Sans Bold";
+  src: url("/source/fonts/opensansbold.woff2") format("woff2"),
+    url("/source/fonts/opensansbold.woff") format("woff");
+}
+
 *,
 *::before,
 *::after {

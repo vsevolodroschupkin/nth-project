@@ -1,44 +1,178 @@
 .promo-product {
-  padding-top: 30px;
+  padding-top: 28px;
   padding-bottom: 36px;
+  position: relative;
+
+  &::before {
+    @media (min-width: $screen-m) {
+      content: "";
+      width: 100%;
+      height: 24px;
+      position: absolute;
+      top: -15px;
+      left: 0;
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-repeat: repeat-x;
+      background-position: top;
+      z-index: 10;
+    }
+  }
+
+  @media (min-width: $screen-m) {
+    padding-top: 43px;
+    padding-bottom: 53px;
+  }
+
+  @media (min-width: $screen-l) {
+    padding-top: 117px;
+    padding-bottom: 73px;
+  }
 
   &__wrapper {
+    width: 80%;
     margin: 0 auto;
+    position: relative;
+
+    @media (min-width: $screen-m) {
+      width: 668px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    @media (min-width: $screen-l) {
+      width: 1050px;
+      padding-left: 175px;
+    }
   }
 
   &__title {
-    margin: 0;
+    margin-top: 0;
+    margin-bottom: 5px;
     font-size: 25px;
     font-weight: 700;
     line-height: 30px;
     color: $black;
+
+    @media (min-width: $screen-m) {
+      min-width: 420px;
+      margin-bottom: 50px;
+      font-size: 43px;
+      line-height: 50px;
+    }
+
+    @media (min-width: $screen-l) {
+      font-size: 53px;
+      line-height: 57px;
+    }
   }
 
   &__tag {
+    margin-bottom: 22px;
+    display: block;
     font-size: 17px;
     font-weight: 700;
     line-height: 20px;
     color: $color-accent;
+    text-transform: uppercase;
+
+    @media (min-width: $screen-m) {
+      width: 70px;
+      position: absolute;
+      top: 40px;
+      right: 80px;
+      line-height: 17px;
+      text-align: center;
+    }
+
+    @media (min-width: $screen-l) {
+      left: 147px;
+    }
   }
 
   &__desc {
-    margin: 0;
+    margin-top: 0;
+    margin-bottom: 22px;
     line-height: 24px;
+
+    @media (min-width: $screen-m) {
+      width: 290px;
+      margin-bottom: 50px;
+      font-size: 17px;
+      line-height: 30px;
+    }
   }
 
   &__table {
     line-height: 20px;
+    margin-bottom: 28px;
+
+    @media (min-width: $screen-m) {
+      width: 290px;
+      margin-bottom: 55px;
+    }
+  }
+
+  &__table tbody {
+    display: flex;
+    flex-direction: column;
   }
 
   &__table-row {
+    padding-top: 5px;
+    padding-bottom: 5px;
     border-bottom: 1px solid $border-color;
+  }
+
+  &__field {
+    min-width: 80px;
+  }
+
+  &__value {
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
   &__price {
     margin: 0;
-    margin-bottom: 28px;
+    margin-bottom: 26px;
     font-size: 17px;
     font-weight: 700;
     line-height: 24px;
+    text-align: center;
+
+    @media (min-width: $screen-m) {
+      width: 290px;
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+
+  &__image {
+    width: 260px;
+    height: 315px;
+    margin: 0 auto;
+    margin-bottom: 27px;
+    display: block;
+
+    @media (min-width: $screen-m) {
+      width: 333px;
+      height: 404px;
+      position: absolute;
+      bottom: 53px;
+      right: 40px;
+      z-index: -1;
+    }
+
+    @media (min-width: $screen-l) {
+      width: 525px;
+      height: 625px;
+      bottom: 73px;
+      right: 0;
+    }
+  }
+
+  &__btn {
+    width: 100%;
   }
 }

@@ -1,5 +1,16 @@
 .social-links {
+  width: 140px;
   margin: 0;
   padding: 0;
+  display: flex;
+  justify-content: space-between;
   list-style: none;
+
+  &__link {
+    width: 23px;
+    height: 23px;
+    display: block;
+    //для сетки
+    outline: 1px solid red;
+  }
 }

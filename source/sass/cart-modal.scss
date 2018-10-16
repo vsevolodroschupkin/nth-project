@@ -1,17 +1,57 @@
 .cart-modal {
+  width: 320px;
+  min-height: 336px;
   padding-top: 36px;
   padding-bottom: 46px;
+  padding-right: 30px;
+  padding-left: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   box-shadow: 0 5px 10px 0 $shadow-color;
 
+  @media (min-width: $screen-m) {
+    width: 566px;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    padding-right: 108px;
+    padding-left: 108px;
+  }
+
   &__block {
+    padding: 0;
+    margin: 0;
     border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   &__title {
+    width: 146px;
     margin: 0;
     font-size: 25px;
     font-weight: 700;
     line-height: 30px;
+    text-align: center;
     color: $title-color;
+
+    @media (min-width: $screen-m) {
+      width: 350px;
+    }
+  }
+
+  &__legend {
+    margin: 0 auto;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__radio-wrapper {
+    display: flex;
+    justify-content: space-between;
   }
 }

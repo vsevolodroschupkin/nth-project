@@ -1,6 +1,23 @@
 .slider {
+  position: relative;
+
+  @media (min-width: $screen-m) {
+    width: 642px;
+    display: flex;
+  }
+
+  @media (min-width: $screen-l) {
+    width: 856px;
+  }
+
   &__togglers {
     border: 1px solid $border-color;
+
+    @media (min-width: $screen-m) {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
   }
 
   &__toggler {

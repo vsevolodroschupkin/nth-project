@@ -12,6 +12,7 @@ $color-main:           #444444;
 $color-accent:         #63d1bb;
 $color-accent--dark:   #56c3b2;
 $color-accent--darken: #46c1ae;
+$color-accent--darkest:#149080;
 
 $title-color:            $black;
 $text-color:             $color-main;
@@ -53,7 +54,7 @@ $shadow-color:         rgba(0, 1, 1, 0.25);
 
 
 // Типографика
-$font-family:            "Open Sans", arial, sans-serif;
+$font-family:            "Open Sans", "Arial", sans-serif;
 $font-size:              15px;
 $line-height:            24px;
 
@@ -61,3 +62,4 @@ $line-height:            24px;
 $screen-s:               320px;
 $screen-m:               768px;
 $screen-l:               1250px;
+$screen-s-only:          767px;
