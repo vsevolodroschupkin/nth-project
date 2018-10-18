@@ -39,6 +39,19 @@
     font-weight: 700;
     line-height: 30px;
     color: $black;
+
+    @media (min-width: $screen-m) {
+      margin-bottom: 47px;
+      font-size: 43px;
+      line-height: 50px;
+    }
+
+    @media (min-width: $screen-l) {
+      margin-bottom: 44px;
+      font-size: 53px;
+      line-height: 57px;
+    }
+
   }
 
   &__list {
@@ -59,6 +72,10 @@
 
     &:not(:last-child) {
       margin-bottom: 27px;
+
+      @media (min-width: $screen-m) {
+        margin-bottom: 55px;
+      }
     }
 
     &::before {
@@ -71,6 +88,10 @@
       //для теста
       background: url("/img/icon-feature-flower.svg") no-repeat center center;
     }
+
+    @media (min-width: $screen-m) {
+      width: 88%;
+    }
   }
 
   &__item-title {
@@ -79,5 +100,10 @@
     font-weight: 700;
     line-height: 20px;
     color: $black;
+
+    @media (min-width: $screen-m) {
+      font-size: 20px;
+      line-height: 22px;
+    }
   }
 }

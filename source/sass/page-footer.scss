@@ -29,12 +29,24 @@
   }
 
   &__logo {
+    width: 102px;
+    height: 34px;
     display: none;
+
+    &:hover .page-footer__logo-image,
+    &:focus .page-footer__logo-image {
+      fill: $color-accent--darken;
+    }
 
     @media (min-width: $screen-m) {
       display: block;
       margin-right: 160px;
     }
+  }
+
+  &__logo-image {
+    width: 102px;
+    height: 34px;
   }
 
   &__social-links {
@@ -50,11 +62,37 @@
     }
   }
 
-  &__copyright {
+  &__copyright-link {
     padding-right: 40px;
+    display: block;
+    position: relative;
     font-size: 19px;
     font-weight: 700;
     line-height: 17px;
     color: $title-color;
+    text-decoration: none;
+
+    &:active {
+      color: $title-color--active;
+    }
+
+    &:focus .page-footer__logo-htmlacademy,
+    &:hover .page-footer__logo-htmlacademy {
+      fill: $color-accent--darken;
+    }
+
+    &:active .page-footer__logo-htmlacademy {
+      fill: $color-accent--darken;
+      opacity: 0.3;
+    }
+  }
+
+  &__logo-htmlacademy {
+    width: 27px;
+    height: 34px;
+    position: absolute;
+    top: -7px;
+    right: -20px;
+    fill: $color-accent;
   }
 }

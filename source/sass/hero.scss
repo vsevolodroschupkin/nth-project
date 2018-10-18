@@ -5,11 +5,17 @@
   background-image: url("../img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center top;
+  background-size: cover;
   background-color: $bg-color-secondary;
 
   @media (min-width: $screen-m) {
     min-height: 746px;
     padding-top: 153px;
+    background-image: url("../img/hero-tablet@1x.jpg");
+  }
+
+  @media (min-width: $screen-l) {
+    background-image: url("../img/hero-tablet@1x.jpg");
   }
 
   &__wrapper {

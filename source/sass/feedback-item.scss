@@ -1,7 +1,19 @@
 .feedback-item {
   &__content-block {
-    margin: 0;
+    margin-top: 0;
+    margin-bottom: 35px;
     line-height: 30px;
+
+    @media (min-width: $screen-m) {
+      max-width: 645px;
+      margin-bottom: 68px;
+      font-size: 17px;
+      line-height: 30px;
+    }
+
+    @media (min-width: $screen-l) {
+      max-width: 768px;
+    }
   }
 
   &__author {

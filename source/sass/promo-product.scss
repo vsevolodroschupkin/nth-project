@@ -18,29 +18,12 @@
     }
   }
 
-  &::after {
-    @media (min-width: $screen-m) {
-      content: "";
-      width: 100%;
-      height: 15px;
-      position: absolute;
-      left: 0;
-      bottom: -93px;
-      background-image: url("../img/bg-zigzag-line.svg");
-      background-repeat: repeat-x;
-      background-position: top;
-      z-index: 10;
-    }
-  }
-
   @media (min-width: $screen-m) {
     padding-top: 43px;
-    padding-bottom: 53px;
   }
 
   @media (min-width: $screen-l) {
     padding-top: 120px;
-    padding-bottom: 73px;
   }
 
   &__wrapper {
@@ -94,8 +77,8 @@
     @media (min-width: $screen-m) {
       width: 70px;
       position: absolute;
-      top: 40px;
-      right: 80px;
+      top: 15px;
+      right: 70px;
       line-height: 17px;
       text-align: center;
     }
@@ -183,8 +166,8 @@
       width: 333px;
       height: 404px;
       position: absolute;
-      bottom: 53px;
-      right: 40px;
+      bottom: 30px;
+      right: 0;
       z-index: -1;
     }
 
@@ -198,10 +181,26 @@
   }
 
   &__btn {
+    width: 260px;
+    margin-bottom: 36px;
+
+    @media (min-width: $screen-m) {
+      width: 290px;
+      margin-bottom: 52px;
+    }
+  }
+
+  &__bg-zigzag-line {
     width: 100%;
+    height: 6px;
+    fill: $bg-color-secondary;
+
+    @media (min-width: $screen-m) {
+      height: 15px;
+    }
 
     @media (min-width: $screen-l) {
-      width: 290px;
+      height: 23px;
     }
   }
 }

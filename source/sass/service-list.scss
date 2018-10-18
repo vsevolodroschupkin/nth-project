@@ -29,13 +29,24 @@
     text-decoration: none;
     color: $black;
 
-
     &:hover {
       color: $black-light;
+
+      & .service-list__cart-icon,
+      & .service-list__search-icon {
+        opacity: 1;
+        fill: $color-accent--dark;
+      }
     }
 
     &:active {
       color: $black-lightest;
+
+      & .service-list__cart-icon,
+      & .service-list__search-icon {
+        opacity: 0.3;
+        fill: $color-accent--dark;
+      }
     }
 
     @media (min-width: $screen-m) {
@@ -46,15 +57,6 @@
 
     &--search {
       position: relative;
-
-      &:hover .service-list__search-icon path {
-        fill: $color-accent--dark;
-        opacity: 1;
-      }
-
-      &:active .service-list__search-icon path {
-        opacity: 0.3;
-      }
 
       @media (min-width: $screen-m) {
         width: 82px;
@@ -71,16 +73,6 @@
     &--cart {
       position: relative;
 
-      &:hover .service-list__cart-icon path {
-        fill: $color-accent--dark;
-        opacity: 1;
-      }
-
-      &:active .service-list__cart-icon path {
-        fill: $color-accent--dark;
-        opacity: 0.3;
-      }
-
       @media (min-width: $screen-m) {
         height: 88px;
         padding-left: 83px;
@@ -94,10 +86,7 @@
     position: absolute;
     top: 30px;
     left: 32px;
-
-    & path {
-      opacity: 0.2;
-    }
+    opacity: 0.2;
 
     @media (min-width: $screen-m) {
       top: 40px;
@@ -110,10 +99,7 @@
     position: absolute;
     top: 30px;
     left: 32px;
-
-    & path {
-      opacity: 0.2;
-    }
+    opacity: 0.2;
 
     @media (min-width: $screen-m) {
       top: 40px;
