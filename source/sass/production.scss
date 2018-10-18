@@ -36,6 +36,17 @@
     font-weight: 700;
     line-height: 24px;
     color: $title-color;
+    position: relative;
+
+    &::before {
+      content: "";
+      width: 32px;
+      height: 32px;
+      position: absolute;
+      top: 5px;
+      left: 0;
+      background: url("/img/icon-video.svg");
+    }
 
     @media (min-width: $screen-l) {
       padding-left: 0;
@@ -66,11 +77,28 @@
     width: 100px;
     height: 77px;
     padding: 0;
+    border: none;
     position: absolute;
     top: 50%;
     left: 50%;
     margin-top: -38px;
     margin-left: -50px;
+    background: none;
+    outline: none;
+
+    &:hover .production__icon-play,
+    &:focus .production__icon-play {
+      transform: scale(1.2);
+    }
+
+    &:active .production__icon-play {
+      transform: scale(0.8);
+      opacity: 0.3;
+    }
+  }
+
+  &__icon-play {
+    transition: all 0.2s ease-in-out;
   }
 
   &__text {
