@@ -38,6 +38,10 @@
       fill: $color-accent--darken;
     }
 
+    &:active .page-footer__logo-image {
+      opacity: 0.3;
+    }
+
     @media (min-width: $screen-m) {
       display: block;
       margin-right: 160px;

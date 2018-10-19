@@ -78,17 +78,6 @@
       }
     }
 
-    &::before {
-      content: "";
-      width: 50px;
-      height: 50px;
-      top: 0;
-      left: 0;
-      position: absolute;
-      //для теста
-      background: url("/img/icon-feature-flower.svg") no-repeat center center;
-    }
-
     @media (min-width: $screen-m) {
       width: 88%;
     }
@@ -104,6 +93,48 @@
     @media (min-width: $screen-m) {
       font-size: 20px;
       line-height: 22px;
+    }
+  }
+
+  &__item-ico {
+    position: absolute;
+    top: 0;
+    fill: $color-accent;
+
+    &--eco {
+      width: 32px;
+      height: 37px;
+      left: 8px;
+    }
+
+    &--money {
+      width: 47px;
+      height: 27px;
+      left: 0;
+    }
+
+    &--like {
+      width: 34px;
+      height: 27px;
+      left: 7px;
+    }
+
+    &--knit {
+      width: 35px;
+      height: 35px;
+      left: 3px;
+    }
+
+    &--rocket {
+      width: 55px;
+      height: 23px;
+      left: -5px;
+    }
+
+    &--gift {
+      width: 33px;
+      height: 32px;
+      left: 1px;
     }
   }
 }

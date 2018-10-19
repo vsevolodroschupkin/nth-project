@@ -2,6 +2,15 @@
   margin: 0 auto;
   position: relative;
   background-color: $bg-color;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    box-shadow: 0 6px 10px 0 $shadow-color--light;
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px 0 $shadow-color--light;
+  }
 
   &__wrapper {
     width: 260px;
@@ -13,6 +22,10 @@
 
     @media (min-width: $screen-m) {
       width: 668px;
+      padding-top: 40px;
+      padding-bottom: 46px;
+      padding-left: 42px;
+      padding-right: 42px;
       margin-top: 455px;
     }
 
@@ -20,7 +33,7 @@
       width: 367px;
       padding-top: 100px;
       padding-left: 80px;
-      padding-bottom: 60px;
+      padding-bottom: 55px;
       padding-right: 57px;
       margin-left: 682px;
       margin-top: 0;
@@ -38,14 +51,11 @@
     color: $title-color;
     position: relative;
 
-    &::before {
-      content: "";
-      width: 32px;
-      height: 32px;
-      position: absolute;
-      top: 5px;
-      left: 0;
-      background: url("/img/icon-video.svg");
+    @media (min-width: $screen-m) {
+      padding-left: 65px;
+      margin-bottom: 40px;
+      font-size: 20px;
+      line-height: 24px;
     }
 
     @media (min-width: $screen-l) {
@@ -106,5 +116,24 @@
     margin-bottom: 30px;
     font-size: 13px;
     line-height: 24px;
+
+    @media (min-width: $screen-m) {
+      margin-bottom: 40px;
+      font-size: 15px;
+      line-height: 30px;
+    }
+  }
+
+  &__icon-video {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    top: -5px;
+    left: 0;
+    fill: $color-accent;
+
+    @media (min-width: $screen-l) {
+      top: -65px;
+    }
   }
 }

@@ -14,6 +14,7 @@
     width: 670px;
     min-height: 334px;
     display: flex;
+    justify-content: space-between;
   }
 
   @media (min-width: $screen-l) {
@@ -31,21 +32,26 @@
     border: 1px solid $border-color;
 
     @media (min-width: $screen-m) {
-      width: 335px;
-      padding-top: 25px;
+      width: 336px;
+      padding-top: 20px;
       padding-left: 28px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
 
     @media (min-width: $screen-l) {
       width: 316px;
-      min-height: 197px;
+      height: 197px;
     }
   }
 
   &__text {
     padding-bottom: 25px;
-    margin-bottom: 25px;
-    border-bottom: 1px solid $border-color;
+
+    @media (min-width: $screen-l) {
+      padding-bottom: 15px;
+    }
   }
 
   &__title {
@@ -68,9 +74,16 @@
     &:active {
       color: $black-lightest;
     }
+
+    @media (min-width: $screen-m) {
+      font-size: 20px;
+      line-height: 24px;
+    }
   }
 
   &__buy {
+    padding-top: 25px;
+    border-top: 1px solid $border-color;
     display: flex;
     justify-content: space-between;
   }
@@ -79,6 +92,10 @@
     margin: 0;
     font-size: 13px;
     line-height: 30px;
+
+    @media (min-width: $screen-m) {
+      font-size: 15px;
+    }
   }
 
   &__price {
@@ -86,6 +103,10 @@
     font-size: 15px;
     font-weight: 700;
     line-height: 24px;
+
+    @media (min-width: $screen-m) {
+      font-size: 17px;
+    }
   }
 
   &__btn {
