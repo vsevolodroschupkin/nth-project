@@ -1,15 +1,11 @@
 .reviews {
   padding-top: 25px;
+  position: relative;
 
   @media (min-width: $screen-m) {
-    padding-top: 86px;
-    padding-bottom: 70px;
-    background: url("../img/review@1x.jpg") no-repeat top left;
-  }
-
-  @media (min-width: $screen-l) {
     padding-top: 75px;
     padding-bottom: 70px;
+    margin-bottom: 85px;
     background: url("../img/review@1x.jpg") no-repeat top left;
     background-size: contain;
   }
@@ -17,7 +13,7 @@
   @media (min-width: $screen-l) {
     padding-top: 80px;
     padding-bottom: 67px;
-    margin-bottom: 60px;
+    margin-bottom: 100px;
   }
 
   &__wrapper {
@@ -48,10 +44,10 @@
     @media (min-width: $screen-m) {
       font-size: 43px;
       line-height: 50px;
+      margin-bottom: 60px;
     }
 
     @media (min-width: $screen-l) {
-      margin-bottom: 60px;
       font-size: 53px;
       line-height: 57px;
     }
@@ -59,6 +55,10 @@
 
   &__slider{
     margin-bottom: 25px;
+
+    @media (min-width: $screen-m) {
+      margin-bottom: 0;
+    }
   }
 
   &__btn {
@@ -80,13 +80,13 @@
 
     @media (min-width: $screen-m) {
       height: 15px;
-      position: relative;
-      top: 70px;
+      position: absolute;
+      bottom: -70px;
     }
 
     @media (min-width: $screen-l) {
-      height: 23px;
-      top: 200px;
+      height: 21px;
+      bottom: -100px;
     }
   }
 }

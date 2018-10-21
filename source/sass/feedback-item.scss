@@ -23,6 +23,10 @@
     color: $black;
   }
 
+  &__author-block {
+    margin: 0;
+  }
+
   &__account {
     font-weight: 500;
     color: $color-main;

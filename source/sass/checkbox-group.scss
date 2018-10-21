@@ -16,10 +16,15 @@
   &__item {
     &:not(:last-child) {
       margin-bottom: 20px;
+
+      @media (min-width: $screen-m) {
+        margin-bottom: 23px;
+      }
     }
 
     @media (min-width: $screen-m) {
       width: 50%;
+      margin-bottom: 23px;
     }
 
     @media (min-width: $screen-l) {

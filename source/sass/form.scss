@@ -1,8 +1,4 @@
 .form {
-  @media (min-width: $screen-m) {
-    padding-bottom: 50px;
-  }
-
   &__fieldset {
     border: none;
     padding: 0;
@@ -10,18 +6,23 @@
 
   &__group {
     width: 80%;
-    padding-top: 0;
+    padding-top: 32px;
     padding-bottom: 0;
     margin: 0 auto;
+    position: relative;
     border: none;
+    border-top: 1px solid $color-accent;
 
     &--tel {
-      margin-bottom: 20px;
+      margin-bottom: 40px;
     }
 
     @media (min-width: $screen-m) {
       width: 668px;
+      padding-top: 0;
+      padding-left: 165px;
       display: flex;
+      border: none;
     }
 
     @media (min-width: $screen-l) {
@@ -35,22 +36,31 @@
     padding-top: 0;
     padding-bottom: 0;
     margin: 0 auto;
+    margin-top: 10px;
     border: none;
 
     @media (min-width: $screen-m) {
       width: 668px;
+      margin-top: 0;
       display: flex;
       align-items: center;
+      justify-content: space-between;
     }
 
     @media (min-width: $screen-l) {
-      width: 1050px;
-      padding-left: 340px;
+      width: 700px;
+      padding-left: 0;
     }
   }
 
   &__section {
-    margin-bottom: 30px;
+    &:not(:last-child) {
+    margin-bottom: 40px;
+
+      @media (min-width: $screen-m) {
+        margin-bottom: 0;
+      }
+    }
 
     &:nth-child(2n) {
       @media (min-width: $screen-m) {
@@ -59,35 +69,44 @@
     }
 
     @media (min-width: $screen-m) {
-      margin-bottom: 0;
       padding-top: 50px;
       padding-bottom: 50px;
     }
   }
 
   &__group-label {
+    margin-top: 0;
     margin-bottom: 25px;
+    padding-right: 25px;
+    position: absolute;
+    display: inline-block;
+    top: -10px;
+    background: $bg-color;
     font-size: 17px;
     font-weight: 700;
     line-height: 16px;
     color: $color-accent;
+    text-transform: uppercase;
 
     @media (min-width: $screen-m) {
-      width: 167px;
+      left: 0;
+      top: 16px;
+      background-color: transparent;
     }
 
     @media (min-width: $screen-l) {
-      width: 110px;
+      left: 60px;
     }
   }
 
   &__group-field {
     @media (min-width: $screen-m) {
-      width: 500px;
+      flex-grow: 1;
     }
 
     @media (min-width: $screen-l) {
-      flex-grow: 1;
+      width: 700px;
+      flex-grow: 0;
     }
   }
 
@@ -96,15 +115,31 @@
     font-weight: 700;
     line-height: 18px;
     color: $input-text-color;
+
+    @media (min-width: $screen-m) {
+      padding-right: 25px;
+    }
   }
 
   &__notice {
+    margin-bottom: 30px;
+    display: block;
     font-size: 14px;
     line-height: 16px;
 
     @media (min-width: $screen-m) {
+      margin-bottom: 0;
       order: 2;
-      margin-left: auto;
+      font-size: 17px;
+    }
+  }
+  &__field-block-wrapper {
+    @media (min-width: $screen-m) {
+      width: 100%;
+    }
+
+    @media (min-width: $screen-l) {
+      width: 700px;
     }
   }
 
@@ -113,8 +148,9 @@
       margin-bottom: 20px;
     }
 
-    @media (min-width: $screen-l) {
+    @media (min-width: $screen-m) {
       display: flex;
+      align-items: center;
     }
   }
 

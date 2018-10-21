@@ -1,9 +1,50 @@
 .field {
-  width: 100%;
-  border: none;
-  border-bottom: 1px solid $input-border-color;
+  position: relative;
 
-  &--comment {
-    border: 1px solid $input-border-color;
+  &__input {
+    width: 100%;
+    padding: 15px 0;
+    border: none;
+    border-bottom: 2px solid $input-border-color;
+    background-color: transparent;
+
+    &:focus,
+    &:hover {
+      border-color: $color-accent;
+      outline: none;
+    }
+
+    &:hover + .field__icon,
+    &:focus + .field__icon {
+      fill: $color-accent;
+      opacity: 1;
+    }
+
+    &--comment {
+      border: 2px solid $input-border-color;
+      padding: 17px 80px 17px 17px;
+    }
+
+    @media (min-width: $screen-m) {
+      padding-left: 15px;
+      font-size: 19px;
+    }
+  }
+
+  &__icon {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    opacity: 0.2;
+
+    &--tel {
+      width: 25px;
+      height: 24px;
+    }
+
+    &--mail {
+      width: 32px;
+      height: 32px;
+    }
   }
 }
