@@ -11,19 +11,28 @@
 
   @media (min-width: $screen-l) {
     width: 800px;
+    justify-content: space-between;
   }
 
   &__item {
     &:not(:last-child) {
-      margin-bottom: 20px;
+      margin-bottom: 22px;
 
       @media (min-width: $screen-m) {
         margin-bottom: 23px;
       }
     }
 
+    &:nth-child(2n-1) {
+      margin-right: 80px;
+
+      @media (min-width: $screen-l) {
+        margin-right: 0;
+      }
+    }
+
     @media (min-width: $screen-m) {
-      width: 50%;
+      width: 40%;
       margin-bottom: 23px;
     }
 

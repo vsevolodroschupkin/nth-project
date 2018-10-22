@@ -1,7 +1,7 @@
 .cart-btn {
   width: 260px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 17px;
+  padding-bottom: 15px;
   border: 2px solid $btn-cart-bg;
   font-size: 17px;
   font-weight: 700;
@@ -14,5 +14,9 @@
   &:focus {
     color: $btn-cart-color--hover;
     background-color: $btn-cart-bg--hover;
+  }
+
+  @media (min-width: $screen-m) {
+    width: 350px;
   }
 }

@@ -1,6 +1,5 @@
 .promo-product {
-  padding-top: 28px;
-  padding-bottom: 36px;
+  padding-top: 26px;
   position: relative;
 
   &::before {
@@ -20,10 +19,12 @@
 
   @media (min-width: $screen-m) {
     padding-top: 43px;
+    padding-bottom: 72px;
   }
 
   @media (min-width: $screen-l) {
     padding-top: 120px;
+    padding-bottom: 94px;
   }
 
   &__wrapper {
@@ -78,27 +79,31 @@
       width: 70px;
       position: absolute;
       top: 15px;
-      right: 70px;
+      right: 27px;
       line-height: 17px;
       text-align: center;
     }
 
     @media (min-width: $screen-l) {
-      left: 50px;
+      left: 47px;
       top: 15px;
     }
   }
 
   &__desc {
     margin-top: 0;
-    margin-bottom: 22px;
+    margin-bottom: 20px;
     line-height: 24px;
 
     @media (min-width: $screen-m) {
       width: 290px;
-      margin-bottom: 50px;
+      margin-bottom: 38px;
       font-size: 17px;
       line-height: 30px;
+    }
+
+    @media (min-width: $screen-l) {
+      margin-bottom: 50px;
     }
   }
 
@@ -108,7 +113,7 @@
 
     @media (min-width: $screen-m) {
       width: 290px;
-      margin-bottom: 55px;
+      margin-bottom: 61px;
     }
 
     @media (min-width: $screen-l) {
@@ -129,7 +134,7 @@
   }
 
   &__field {
-    min-width: 80px;
+    min-width: 75px;
   }
 
   &__value {
@@ -167,7 +172,7 @@
       width: 333px;
       height: 404px;
       position: absolute;
-      bottom: 30px;
+      bottom: -24px;
       right: 0;
       z-index: -1;
     }
@@ -183,13 +188,17 @@
 
   &__btn {
     width: 260px;
-    margin-bottom: 36px;
+    margin-bottom: 26px;
     align-self: center;
 
     @media (min-width: $screen-m) {
       width: 290px;
       margin-bottom: 52px;
       align-self: flex-start;
+    }
+
+    @media (min-width: $screen-m) {
+      margin-bottom: 0;
     }
   }
 
@@ -200,6 +209,8 @@
 
     @media (min-width: $screen-m) {
       height: 15px;
+      position: absolute;
+      bottom: 0;
     }
 
     @media (min-width: $screen-l) {

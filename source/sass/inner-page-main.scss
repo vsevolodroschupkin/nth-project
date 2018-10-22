@@ -3,13 +3,21 @@
   background-color: $bg-color-secondary;
 
   @media (min-width: $screen-m) {
-    padding-top: 106px;
+    padding-top: 95px;
   }
 
   &__title {
-    margin-bottom: 70px;
+    margin-bottom: 75px;
     margin-left: auto;
     margin-right: auto;
+
+    @media (min-width: $screen-m) {
+      margin-bottom: 85px;
+    }
+
+    @media (min-width: $screen-l) {
+      margin-bottom: 100px;
+    }
   }
 
   &__content {
@@ -23,6 +31,12 @@
 
     @media (min-width: $screen-m) {
       padding-top: 70px;
+      padding-bottom: 60px;
+    }
+
+    @media (min-width: $screen-l) {
+      padding-top: 133px;
+      padding-bottom: 112px;
     }
 
     &::before {
@@ -38,10 +52,6 @@
         background-position: top;
         z-index: 10;
       }
-    }
-
-    @media (min-width: $screen-m) {
-      padding-bottom: 63px;
     }
   }
 }

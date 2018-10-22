@@ -97,5 +97,14 @@
     &:first-child {
       margin-right: 60px;
     }
+
+    & a:hover,
+    & a:focus {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }

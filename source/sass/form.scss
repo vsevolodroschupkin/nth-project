@@ -13,8 +13,22 @@
     border: none;
     border-top: 1px solid $color-accent;
 
-    &--tel {
+    &--tel,
+    &--email {
       margin-bottom: 40px;
+      padding-top: 20px;
+    }
+
+    &--tel {
+      @media (min-width: $screen-m) {
+        margin-bottom: 20px;
+      }
+    }
+
+    &--email {
+      @media (min-width: $screen-m) {
+        margin-bottom: 0;
+      }
     }
 
     @media (min-width: $screen-m) {
@@ -70,7 +84,35 @@
 
     @media (min-width: $screen-m) {
       padding-top: 50px;
-      padding-bottom: 50px;
+      padding-bottom: 30px;
+    }
+
+    &--checkboxes {
+      @media (min-width: $screen-m) {
+        padding-bottom: 27px;
+      }
+    }
+
+    &--fields {
+      @media (min-width: $screen-m) {
+        padding-bottom: 50px;
+      }
+    }
+
+    &--contacts {
+      @media (min-width: $screen-m) {
+        padding-bottom: 50px;
+      }
+    }
+
+    &--comment {
+      @media (min-width: $screen-m) {
+        padding-bottom: 50px;
+      }
+
+      @media (min-width: $screen-l) {
+        padding-bottom: 40px;
+      }
     }
   }
 
@@ -118,6 +160,8 @@
 
     @media (min-width: $screen-m) {
       padding-right: 25px;
+      font-size: 19px;
+      line-height: 18px;
     }
   }
 
@@ -146,6 +190,10 @@
   &__field-block {
     &:not(:last-child) {
       margin-bottom: 20px;
+
+      @media (min-width: $screen-m) {
+        margin-bottom: 23px;
+      }
     }
 
     @media (min-width: $screen-m) {

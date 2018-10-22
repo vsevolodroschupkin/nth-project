@@ -21,6 +21,8 @@
     }
 
     &--comment {
+      height: 142px;
+      margin: 0;
       border: 2px solid $input-border-color;
       padding: 17px 80px 17px 17px;
     }
@@ -34,7 +36,7 @@
   &__icon {
     position: absolute;
     top: 5px;
-    right: 5px;
+    right: 20px;
     opacity: 0.2;
 
     &--tel {

@@ -5,8 +5,8 @@
 
   &__label {
     width: 82px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 18px;
+    padding-bottom: 15px;
     border: 2px solid $border-color;
     display: block;
     font-size: 17px;
@@ -21,6 +21,10 @@
 
     &:active {
       border-color: $color-accent;
+    }
+
+    @media (min-width: $screen-m) {
+      width: 110px;
     }
   }
 }

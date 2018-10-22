@@ -1,11 +1,12 @@
 .cart-modal {
   width: 320px;
   min-height: 336px;
-  margin-right: 160px;
-  padding-top: 36px;
+  margin-left: -160px;
+  padding-top: 30px;
   padding-bottom: 46px;
   padding-right: 30px;
   padding-left: 30px;
+  border: 1px solid $border-color;
   display: none;
   flex-direction: column;
   align-items: center;
@@ -14,6 +15,7 @@
   left: 50%;
   background-color: $bg-color;
   box-shadow: 0 5px 10px 0 $shadow-color;
+  z-index: 60;
 
   &--opened {
     display: flex;
@@ -21,10 +23,11 @@
 
   @media (min-width: $screen-m) {
     width: 566px;
-    padding-top: 45px;
+    margin-left: -288px;
+    padding-top: 34px;
     padding-bottom: 45px;
-    padding-right: 108px;
-    padding-left: 108px;
+    padding-right: 103px;
+    padding-left: 103px;
   }
 
   &__block {
@@ -37,26 +40,39 @@
   }
 
   &__title {
-    width: 146px;
     margin-top: 0;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
     font-size: 25px;
     font-weight: 700;
     line-height: 30px;
     text-align: center;
     color: $title-color;
+    text-transform: uppercase;
+
+    & br {
+      @media (min-width: $screen-m) {
+        display: none;
+      }
+    }
 
     @media (min-width: $screen-m) {
-      width: 350px;
+      font-size: 30px;
+      line-height: 57px;
     }
   }
 
   &__legend {
-    margin: 0 auto 20px auto;
+    margin: 0 auto 25px auto;
+
+    @media (min-width: $screen-m) {
+      margin-bottom: 19px;
+      font-size: 17px;
+      line-height: 30px;
+    }
   }
 
   &__block {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
 
   &__form {

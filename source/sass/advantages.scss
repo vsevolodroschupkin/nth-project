@@ -1,14 +1,14 @@
 .advantages {
-  padding-top: 34px;
+  padding-top: 20px;
   padding-bottom: 30px;
 
   @media (min-width: $screen-m) {
-    padding-top: 60px;
-    padding-bottom: 80px;
+    padding-top: 43px;
+    padding-bottom: 57px;
   }
 
   @media (min-width: $screen-l) {
-    padding-top: 70px;
+    padding-top: 60px;
     padding-bottom: 90px;
   }
 
@@ -47,7 +47,7 @@
     }
 
     @media (min-width: $screen-l) {
-      margin-bottom: 44px;
+      margin-bottom: 50px;
       font-size: 53px;
       line-height: 57px;
     }
@@ -63,10 +63,21 @@
     &:last-child {
       margin-bottom: 0;
     }
+
+    &:first-child {
+      @media (min-width: $screen-l) {
+        margin-bottom: 0;
+        margin-right: 50px;
+      }
+    }
+
+    @media (min-width: $screen-l) {
+      width: 300px;
+    }
   }
 
   &__item {
-    width: 65%;
+    width: 80%;
     padding-top: 55px;
     position: relative;
 
@@ -74,12 +85,17 @@
       margin-bottom: 27px;
 
       @media (min-width: $screen-m) {
-        margin-bottom: 55px;
+        margin-bottom: 57px;
       }
     }
 
     @media (min-width: $screen-m) {
       width: 88%;
+    }
+
+    @media (min-width: $screen-l) {
+      padding-top: 53px;
+      width: 100%;
     }
   }
 

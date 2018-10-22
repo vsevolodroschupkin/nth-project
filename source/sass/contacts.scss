@@ -1,5 +1,5 @@
 .contacts {
-  padding-top: 44px;
+  padding-top: 28px;
   padding-bottom: 40px;
   position: relative;
 
@@ -11,7 +11,7 @@
   @media (min-width: $screen-l) {
     min-height: 633px;
     padding-top: 152px;
-    padding-bottom: 105px;
+    padding-bottom: 55px;
   }
 
   &__inner {
@@ -34,7 +34,7 @@
     }
 
     @media (min-width: $screen-l) {
-      width: 300px;
+      width: 350px;
       margin: 0;
     }
   }
@@ -55,14 +55,17 @@
   }
 
   &__map-wrapper {
+    width: 100%;
+    margin: 0 auto;
+
     @media (min-width: $screen-l) {
-      margin-top: -80px;
+      margin-top: -70px;
     }
   }
 
   &__title {
     margin-top: 0;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     font-size: 18px;
     font-weight: 700;
     line-height: 30px;
@@ -79,7 +82,7 @@
 
       @media (min-width: $screen-m) {
         display: block;
-        left: 655px;
+        left: 625px;
         top: -15px;
       }
 
@@ -92,7 +95,7 @@
     @media (min-width: $screen-m) {
       font-size: 43px;
       line-height: 50px;
-      margin-bottom: 60px;
+      margin-bottom: 46px;
     }
 
     @media (min-width: $screen-l) {
@@ -107,7 +110,10 @@
     flex-direction: column;
 
     @media (min-width: $screen-m) {
+      width: auto;
+      margin-bottom: 30px;
       flex-direction: row;
+      font-size: 17px;
     }
 
     @media (min-width: $screen-l) {
@@ -118,18 +124,22 @@
   &__row {
     display: flex;
     align-items: flex-start;
-    margin-bottom: 42px;
+    margin-bottom: 32px;
 
     &:first-child {
       margin-right: 55px;
+
+      @media(min-width: $screen-m) {
+        margin-right: 47px;
+      }
     }
 
     @media (min-width: $screen-m) {
-      margin-bottom: 60px;
+      margin-bottom: 26px;
     }
 
     @media (min-width: $screen-l) {
-      margin-bottom: 40px;
+      margin-bottom: 30px;
     }
   }
 
@@ -140,9 +150,10 @@
 
   &__value {
     width: 180px;
+    line-height: 29px;
 
     @media (min-width: $screen-m) {
-      width: 220px;
+      width: 230px;
     }
   }
 

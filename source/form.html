@@ -67,8 +67,12 @@
   <header class="page-header">
     <nav class="main-nav main-nav--closed main-nav--nojs">
       <div class="main-nav__block header-nav">
-        <a class="header-nav__logo">
-          <img class="header-nav__logo-image" src="http://placehold.it/86x35" width="86" height="35" alt="Интернет-магазин Mishka">
+        <a class="header-nav__logo" href="/index.html">
+          <picture>
+            <source media="(min-width: 1250px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img class="header-nav__logo-image" src="img/logo-mobile.svg" alt="Интернет-магазин Mishka">
+          </picture>
         </a>
         <button class="header-nav__toggle header-nav__toggle--closed" type="button"><span class="visually-hidden">Открыть меню</span></button>
       </div>
@@ -81,7 +85,7 @@
           </ul>
         </li>
         <li class="site-list__item">
-          <a class="site-list__link" href="/form.html" title="Вязание на заказ">Вязание на заказ</a>
+          <a class="site-list__link" title="Вязание на заказ">Вязание на заказ</a>
         </li>
       </ul>
       <ul class="main-nav__list service-list">
@@ -126,7 +130,7 @@
               </div>
             </fieldset>
           </div>
-          <div class="form__section">
+          <div class="form__section form__section--checkboxes">
             <fieldset class="form__fieldset">
               <div class="form__group">
                 <h3 class="form__group-label">Цвет</h3>
@@ -159,7 +163,7 @@
               </div>
             </fieldset>
           </div>
-          <div class="form__section">
+          <div class="form__section form__section--fields">
             <fieldset class="form__fieldset">
               <div class="form__group">
                 <h3 class="form__group-label">ФИО</h3>
@@ -186,7 +190,7 @@
               </div>
             </fieldset>
           </div>
-          <div class="form__section">
+          <div class="form__section form__section--contacts">
             <div class="form__group form__group--tel">
               <label class="form__group-label" for="tel">Тел</label>
               <div class="form__group-field field">
@@ -206,7 +210,7 @@
               </div>
             </div>
           </div>
-          <div class="form__section">
+          <div class="form__section form__section--comment">
             <div class="form__group">
               <label class="form__group-label" for="comment">Доп</label>
               <div class="form__group-field field">
