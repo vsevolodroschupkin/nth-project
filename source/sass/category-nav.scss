@@ -70,8 +70,8 @@
 
     &:hover,
     &:focus {
-      @media (min-width: $screen-m){
-      padding-bottom: 35px;
+      @media (min-width: $screen-m) {
+        padding-bottom: 35px;
       }
     }
 
