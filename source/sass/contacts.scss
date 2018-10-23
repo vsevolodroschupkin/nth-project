@@ -65,7 +65,7 @@
 
   &__title {
     margin-top: 0;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
     font-size: 18px;
     font-weight: 700;
     line-height: 30px;
@@ -106,6 +106,7 @@
 
   &__table tbody {
     width: 260px;
+    margin-bottom: 36px;
     display: flex;
     flex-direction: column;
 
@@ -124,10 +125,10 @@
   &__row {
     display: flex;
     align-items: flex-start;
-    margin-bottom: 32px;
 
     &:first-child {
       margin-right: 55px;
+      margin-bottom: 32px;
 
       @media (min-width: $screen-m) {
         margin-right: 47px;
@@ -145,11 +146,15 @@
 
   &__field {
     min-width: 70px;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
     padding-right: 10px;
   }
 
   &__value {
     width: 180px;
+    padding: 0;
     line-height: 29px;
 
     @media (min-width: $screen-m) {

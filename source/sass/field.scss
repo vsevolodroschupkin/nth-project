@@ -7,6 +7,8 @@
     border: none;
     border-bottom: 2px solid $input-border-color;
     background-color: transparent;
+    font-size: 17px;
+    line-height: 18px;
 
     &:focus,
     &:hover {
@@ -28,7 +30,9 @@
     }
 
     @media (min-width: $screen-m) {
-      padding-left: 15px;
+      padding-top: 12px;
+      padding-left: 18px;
+      padding-bottom: 11px;
       font-size: 19px;
     }
   }
@@ -36,7 +40,7 @@
   &__icon {
     position: absolute;
     top: 5px;
-    right: 20px;
+    right: 0;
     opacity: 0.2;
 
     &--tel {
@@ -47,6 +51,16 @@
     &--mail {
       width: 32px;
       height: 32px;
+    }
+
+    @media (min-width: $screen-m) {
+      right: 23px;
+      top: 13px;
+    }
+
+    @media (min-width: $screen-l) {
+      right: 6px;
+      top: 10px;
     }
   }
 }

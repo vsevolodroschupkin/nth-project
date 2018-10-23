@@ -16,12 +16,12 @@
     &--tel,
     &--email {
       margin-bottom: 40px;
-      padding-top: 20px;
+      padding-top: 16px;
     }
 
     &--tel {
       @media (min-width: $screen-m) {
-        margin-bottom: 20px;
+        margin-bottom: 25px;
       }
     }
 
@@ -193,7 +193,7 @@
       margin-bottom: 20px;
 
       @media (min-width: $screen-m) {
-        margin-bottom: 23px;
+        margin-bottom: 25px;
       }
     }
 

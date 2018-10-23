@@ -1,7 +1,7 @@
 .feedback-item {
   &__content-block {
     margin-top: 0;
-    margin-bottom: 55px;
+    margin-bottom: 25px;
     line-height: 30px;
 
     @media (min-width: $screen-m) {
@@ -30,6 +30,7 @@
   }
 
   &__account {
+    font-size: 17px;
     font-weight: 500;
     color: $color-main;
   }
