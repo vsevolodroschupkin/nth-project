@@ -1,6 +1,6 @@
 .page-footer {
   min-height: 160px;
-  padding-top: 30px;
+  padding-top: 24px;
   padding-bottom: 30px;
   background-color: $bg-color-secondary;
 
@@ -29,17 +29,33 @@
   }
 
   &__logo {
+    width: 102px;
+    height: 34px;
     display: none;
+
+    &:hover .page-footer__logo-image,
+    &:focus .page-footer__logo-image {
+      fill: $color-accent--darken;
+    }
+
+    &:active .page-footer__logo-image {
+      opacity: 0.3;
+    }
 
     @media (min-width: $screen-m) {
       display: block;
-      margin-right: 160px;
+      margin-right: 155px;
     }
+  }
+
+  &__logo-image {
+    width: 102px;
+    height: 34px;
   }
 
   &__social-links {
     padding-bottom: 27px;
-    margin-bottom: 25px;
+    margin-bottom: 27px;
     border-bottom: 1px solid $border-color;
 
     @media (min-width: $screen-m) {
@@ -50,11 +66,41 @@
     }
   }
 
-  &__copyright {
-    padding-right: 40px;
+  &__copyright-link {
+    padding-right: 55px;
+    display: block;
+    position: relative;
     font-size: 19px;
     font-weight: 700;
     line-height: 17px;
     color: $title-color;
+    text-decoration: none;
+
+    &:active {
+      color: $title-color--active;
+    }
+
+    &:focus .page-footer__logo-htmlacademy,
+    &:hover .page-footer__logo-htmlacademy {
+      fill: $color-accent--darken;
+    }
+
+    &:active .page-footer__logo-htmlacademy {
+      fill: $color-accent--darken;
+      opacity: 0.3;
+    }
+
+    @media (min-width: $screen-m) {
+      padding-right: 58px;
+    }
+  }
+
+  &__logo-htmlacademy {
+    width: 27px;
+    height: 34px;
+    position: absolute;
+    top: -7px;
+    right: 0;
+    fill: $color-accent;
   }
 }

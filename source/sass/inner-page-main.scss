@@ -1,13 +1,20 @@
 .inner-page-main {
-  padding-top: 70px;
-  background-color: $bg-color-secondary;
+  &__wrapper {
+    padding-top: 70px;
+    padding-bottom: 75px;
+    background-color: $bg-color-secondary;
 
-  @media (min-width: $screen-m) {
-    padding-top: 106px;
+    @media (min-width: $screen-m) {
+      padding-top: 95px;
+      padding-bottom: 85px;
+    }
+
+    @media (min-width: $screen-l) {
+      padding-bottom: 100px;
+    }
   }
 
   &__title {
-    margin-bottom: 70px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -15,13 +22,35 @@
   &__content {
     padding-top: 30px;
     padding-bottom: 58px;
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: $bg-color;
 
     @media (min-width: $screen-m) {
-      padding-bottom: 63px;
+      padding-top: 70px;
+      padding-bottom: 60px;
+    }
+
+    @media (min-width: $screen-l) {
+      padding-top: 133px;
+      padding-bottom: 112px;
+    }
+
+    &::before {
+      @media (min-width: $screen-m) {
+        content: "";
+        width: 100%;
+        height: 24px;
+        position: absolute;
+        top: -15px;
+        left: 0;
+        background-image: url("../img/bg-zigzag-fill.svg");
+        background-repeat: repeat-x;
+        background-position: top;
+        z-index: 10;
+      }
     }
   }
 }

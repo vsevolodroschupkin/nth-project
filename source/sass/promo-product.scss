@@ -1,6 +1,5 @@
 .promo-product {
-  padding-top: 28px;
-  padding-bottom: 36px;
+  padding-top: 26px;
   position: relative;
 
   &::before {
@@ -20,23 +19,23 @@
 
   @media (min-width: $screen-m) {
     padding-top: 43px;
-    padding-bottom: 53px;
+    padding-bottom: 72px;
   }
 
   @media (min-width: $screen-l) {
-    padding-top: 117px;
-    padding-bottom: 73px;
+    padding-top: 120px;
+    padding-bottom: 94px;
   }
 
   &__wrapper {
     width: 80%;
     margin: 0 auto;
     position: relative;
+    display: flex;
+    flex-direction: column;
 
     @media (min-width: $screen-m) {
       width: 668px;
-      display: flex;
-      flex-direction: column;
       align-items: flex-start;
     }
 
@@ -79,27 +78,32 @@
     @media (min-width: $screen-m) {
       width: 70px;
       position: absolute;
-      top: 40px;
-      right: 80px;
+      top: 15px;
+      right: 27px;
       line-height: 17px;
       text-align: center;
     }
 
     @media (min-width: $screen-l) {
-      left: 147px;
+      left: 47px;
+      top: 15px;
     }
   }
 
   &__desc {
     margin-top: 0;
-    margin-bottom: 22px;
+    margin-bottom: 20px;
     line-height: 24px;
 
     @media (min-width: $screen-m) {
       width: 290px;
-      margin-bottom: 50px;
+      margin-bottom: 38px;
       font-size: 17px;
       line-height: 30px;
+    }
+
+    @media (min-width: $screen-l) {
+      margin-bottom: 50px;
     }
   }
 
@@ -109,11 +113,16 @@
 
     @media (min-width: $screen-m) {
       width: 290px;
-      margin-bottom: 55px;
+      margin-bottom: 61px;
+    }
+
+    @media (min-width: $screen-l) {
+      margin-bottom: 115px;
     }
   }
 
   &__table tbody {
+    width: 260px;
     display: flex;
     flex-direction: column;
   }
@@ -125,7 +134,7 @@
   }
 
   &__field {
-    min-width: 80px;
+    min-width: 75px;
   }
 
   &__value {
@@ -146,6 +155,10 @@
       font-size: 20px;
       line-height: 24px;
     }
+
+    @media (min-width: $screen-m) {
+      margin-bottom: 32px;
+    }
   }
 
   &__image {
@@ -159,8 +172,8 @@
       width: 333px;
       height: 404px;
       position: absolute;
-      bottom: 53px;
-      right: 40px;
+      bottom: -24px;
+      right: 0;
       z-index: -1;
     }
 
@@ -169,10 +182,39 @@
       height: 625px;
       bottom: 73px;
       right: 0;
+      top: -50px;
     }
   }
 
   &__btn {
+    width: 260px;
+    margin-bottom: 26px;
+    align-self: center;
+
+    @media (min-width: $screen-m) {
+      width: 290px;
+      margin-bottom: 52px;
+      align-self: flex-start;
+    }
+
+    @media (min-width: $screen-m) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__bg-zigzag-line {
     width: 100%;
+    height: 6px;
+    fill: $bg-color-secondary;
+
+    @media (min-width: $screen-m) {
+      height: 15px;
+      position: absolute;
+      bottom: 0;
+    }
+
+    @media (min-width: $screen-l) {
+      height: 21px;
+    }
   }
 }

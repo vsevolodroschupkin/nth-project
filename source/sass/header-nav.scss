@@ -1,7 +1,7 @@
 .header-nav {
   min-height: 79px;
-  padding-top: 22px;
-  padding-bottom: 22px;
+  padding-top: 29px;
+  padding-bottom: 16px;
   position: relative;
   display: flex;
   justify-content: center;
@@ -14,8 +14,8 @@
   }
 
   @media (min-width: $screen-l) {
-    padding-top: 8px;
-    padding-bottom: 7px;
+    padding-top: 20px;
+    padding-bottom: 0;
     justify-content: center;
   }
 
@@ -25,6 +25,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    &[href]:hover .header-nav__logo-image {
+      opacity: 0.6;
+    }
+
+    &[href]:active .header-nav__logo-image {
+      opacity: 0.3;
+    }
 
     @media (min-width: $screen-m) {
       margin-right: 205px;

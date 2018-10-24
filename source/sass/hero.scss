@@ -1,15 +1,21 @@
 .hero {
-  min-height: 489px;
+  min-height: 460px;
   padding-top: 70px;
   display: flex;
   background-image: url("../img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: center top;
+  background-position: center -30px;
   background-color: $bg-color-secondary;
 
   @media (min-width: $screen-m) {
     min-height: 746px;
     padding-top: 153px;
+    background-image: url("../img/hero-tablet@1x.jpg");
+    background-size: cover;
+  }
+
+  @media (min-width: $screen-l) {
+    background-image: url("../img/hero-tablet@1x.jpg");
   }
 
   &__wrapper {
@@ -20,6 +26,7 @@
     @media (min-width: $screen-m) {
       width: 668px;
       margin: 0 auto;
+      align-items: center;
     }
 
     @media (min-width: $screen-m) {
@@ -29,11 +36,17 @@
 
   &__title {
     width: 70%;
+    margin-bottom: 120px;
     margin-left: auto;
     margin-right: auto;
 
     @media (min-width: $screen-m) {
-      width: 60%;
+      width: 65%;
+      margin-bottom: 360px;
+    }
+
+    @media (min-width: $screen-l) {
+      margin-bottom: 354px;
     }
   }
 }

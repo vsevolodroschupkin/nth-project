@@ -7,10 +7,35 @@
   list-style: none;
 
   &__link {
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    &:hover .social-links__icon,
+    &:focus .social-links__icon {
+      fill: $color-accent--darkest;
+    }
+
+    &:active .social-links__icon {
+      opacity: 0.3;
+    }
+  }
+
+  &__icon-insta {
+    width: 22px;
+    height: 21px;
+  }
+
+  &__icon-fb {
+    width: 15px;
+    height: 28px;
+  }
+
+  &__icon-twitter {
     width: 23px;
-    height: 23px;
-    display: block;
-    //для сетки
-    outline: 1px solid red;
+    height: 20px;
   }
 }

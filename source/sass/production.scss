@@ -2,10 +2,19 @@
   margin: 0 auto;
   position: relative;
   background-color: $bg-color;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    box-shadow: 0 6px 10px 0 $shadow-color--light;
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px 0 $shadow-color--light;
+  }
 
   &__wrapper {
     width: 260px;
-    padding-top: 30px;
+    padding-top: 25px;
     padding-bottom: 33px;
     padding-left: 34px;
     padding-right: 34px;
@@ -13,14 +22,18 @@
 
     @media (min-width: $screen-m) {
       width: 668px;
+      padding-top: 40px;
+      padding-bottom: 46px;
+      padding-left: 40px;
+      padding-right: 42px;
       margin-top: 455px;
     }
 
     @media (min-width: $screen-l) {
       width: 367px;
-      padding-top: 100px;
+      padding-top: 96px;
       padding-left: 80px;
-      padding-bottom: 60px;
+      padding-bottom: 55px;
       padding-right: 57px;
       margin-left: 682px;
       margin-top: 0;
@@ -30,22 +43,31 @@
 
   &__title {
     margin-top: 0;
-    margin-bottom: 20px;
+    margin-bottom: 24px;
     padding-left: 57px;
     font-size: 17px;
     font-weight: 700;
     line-height: 24px;
     color: $title-color;
+    position: relative;
+
+    @media (min-width: $screen-m) {
+      padding-left: 65px;
+      margin-bottom: 30px;
+      font-size: 20px;
+      line-height: 24px;
+    }
 
     @media (min-width: $screen-l) {
       padding-left: 0;
+      margin-bottom: 35px;
     }
   }
 
   &__video-container {
     margin-left: -35px;
     margin-right: -35px;
-    margin-bottom: 30px;
+    margin-bottom: 21px;
     position: relative;
 
     @media (min-width: $screen-m) {
@@ -66,17 +88,61 @@
     width: 100px;
     height: 77px;
     padding: 0;
+    border: none;
     position: absolute;
     top: 50%;
     left: 50%;
     margin-top: -38px;
     margin-left: -50px;
+    background: none;
+    outline: none;
+
+    &:hover .production__icon-play,
+    &:focus .production__icon-play {
+      transform: scale(1.2);
+    }
+
+    &:active .production__icon-play {
+      transform: scale(0.8);
+      opacity: 0.3;
+    }
+  }
+
+  &__icon-play {
+    transition: all 0.2s ease-in-out;
   }
 
   &__text {
     margin-top: 0;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
     font-size: 13px;
     line-height: 24px;
+
+    @media (min-width: $screen-m) {
+      margin-bottom: 40px;
+      font-size: 15px;
+      line-height: 30px;
+    }
+
+    @media (min-width: $screen-m) {
+      margin-bottom: 46px;
+    }
+  }
+
+  &__icon-video {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    top: 6px;
+    left: 0;
+    fill: $color-accent;
+
+    @media (min-width: $screen-m) {
+      top: -8px;
+    }
+
+    @media (min-width: $screen-l) {
+      top: -54px;
+    }
   }
 }

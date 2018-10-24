@@ -1,5 +1,5 @@
 .contacts {
-  padding-top: 44px;
+  padding-top: 28px;
   padding-bottom: 40px;
   position: relative;
 
@@ -11,7 +11,18 @@
   @media (min-width: $screen-l) {
     min-height: 633px;
     padding-top: 152px;
-    padding-bottom: 105px;
+    padding-bottom: 55px;
+  }
+
+  &__inner {
+    @media (min-width: $screen-l) {
+      width: 1050px;
+      padding-left: 175px;
+      margin: 0 auto;
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+    }
   }
 
   &__wrapper {
@@ -23,22 +34,87 @@
     }
 
     @media (min-width: $screen-l) {
-      width: 1050px;
-      padding-left: 175px;
+      width: 350px;
+      margin: 0;
+    }
+  }
+
+  &__btn-wrapper {
+    width: 80%;
+    margin: 0 auto;
+
+    @media (min-width: $screen-m) {
+      width: 668px;
+    }
+
+    @media (min-width: $screen-l) {
+      position: absolute;
+      left: 175px;
+      bottom: 52px;
+    }
+  }
+
+  &__map-wrapper {
+    width: 100%;
+    margin: 0 auto;
+
+    @media (min-width: $screen-l) {
+      margin-top: -70px;
     }
   }
 
   &__title {
-    margin: 0;
+    margin-top: 0;
+    margin-bottom: 25px;
     font-size: 18px;
     font-weight: 700;
     line-height: 30px;
-    color: $black;
+    color: $title-color;
+    position: relative;
+
+    &::before {
+      content: "";
+      width: 47px;
+      height: 81px;
+      position: absolute;
+      display: none;
+      background: url("/img/icon-flag.svg") no-repeat center;
+
+      @media (min-width: $screen-m) {
+        display: block;
+        left: 625px;
+        top: -15px;
+      }
+
+      @media (min-width: $screen-l) {
+        left: -100px;
+        display: block;
+      }
+    }
+
+    @media (min-width: $screen-m) {
+      font-size: 43px;
+      line-height: 50px;
+      margin-bottom: 46px;
+    }
+
+    @media (min-width: $screen-l) {
+      font-size: 53px;
+      line-height: 57px;
+    }
   }
 
   &__table tbody {
+    width: 260px;
+    margin-bottom: 36px;
+    display: flex;
+    flex-direction: column;
+
     @media (min-width: $screen-m) {
-      display: flex;
+      width: auto;
+      margin-bottom: 30px;
+      flex-direction: row;
+      font-size: 17px;
     }
 
     @media (min-width: $screen-l) {
@@ -46,26 +122,69 @@
     }
   }
 
+  &__row {
+    display: flex;
+    align-items: flex-start;
+
+    &:first-child {
+      margin-right: 55px;
+      margin-bottom: 32px;
+
+      @media (min-width: $screen-m) {
+        margin-right: 47px;
+      }
+    }
+
+    @media (min-width: $screen-m) {
+      margin-bottom: 26px;
+    }
+
+    @media (min-width: $screen-l) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__field {
+    min-width: 70px;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 10px;
+  }
+
+  &__value {
+    width: 180px;
+    padding: 0;
+    line-height: 29px;
+
+    @media (min-width: $screen-m) {
+      width: 230px;
+    }
+  }
+
   &__map {
     width: 100%;
-    margin: 0 auto;
+    margin: 0 auto 40px auto;
     display: block;
 
     @media (min-width: $screen-m) {
       height: 457px;
+      margin-bottom: 55px;
     }
 
     @media (min-width: $screen-l) {
       width: 525px;
       height: 457px;
-      position: absolute;
-      top: 0;
-      right: 0;
     }
   }
 
   &__btn {
+    width: 260px;
     margin: 0 auto;
+
+    @media (min-width: $screen-m) {
+      width: 230px;
+    }
 
     @media (min-width: $screen-l) {
       margin-left: 0;

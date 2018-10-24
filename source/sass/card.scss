@@ -1,10 +1,20 @@
 .card {
   width: 260px;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    box-shadow: 0 6px 10px 0 $shadow-color--light;
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px 0 $shadow-color--light;
+  }
 
   @media (min-width: $screen-m) {
     width: 670px;
     min-height: 334px;
     display: flex;
+    justify-content: space-between;
   }
 
   @media (min-width: $screen-l) {
@@ -18,22 +28,36 @@
   }
 
   &__descr {
+    padding: 26px;
     border: 1px solid $border-color;
 
     @media (min-width: $screen-m) {
-      width: 335px;
-      padding-top: 25px;
-      padding-left: 28px;
+      width: 336px;
+      padding-top: 26px;
+      padding-left: 26px;
+      padding-right: 35px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
 
     @media (min-width: $screen-l) {
       width: 316px;
-      min-height: 197px;
+      height: 197px;
+    }
+  }
+
+  &__text {
+    padding-bottom: 20px;
+
+    @media (min-width: $screen-l) {
+      padding-bottom: 15px;
     }
   }
 
   &__title {
-    margin: 0;
+    margin-top: 0;
+    margin-bottom: 5px;
   }
 
   &__title a {
@@ -42,12 +66,37 @@
     line-height: 24px;
     color: $title-color;
     text-decoration: none;
+
+    &:hover,
+    &:focus {
+      color: $black-light;
+    }
+
+    &:active {
+      color: $black-lightest;
+    }
+
+    @media (min-width: $screen-m) {
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+
+  &__buy {
+    padding-top: 20px;
+    border-top: 1px solid $border-color;
+    display: flex;
+    justify-content: space-between;
   }
 
   &__props {
     margin: 0;
     font-size: 13px;
     line-height: 30px;
+
+    @media (min-width: $screen-m) {
+      font-size: 15px;
+    }
   }
 
   &__price {
@@ -55,5 +104,32 @@
     font-size: 15px;
     font-weight: 700;
     line-height: 24px;
+
+    @media (min-width: $screen-m) {
+      font-size: 17px;
+    }
+  }
+
+  &__btn {
+    width: 20px;
+    height: 19px;
+    padding: 0;
+    border: none;
+    background: none;
+
+    &:hover .card__cart-icon,
+    &:focus .card__cart-icon {
+      opacity: 1;
+      fill: $color-accent--dark;
+    }
+
+    &:active .card__cart-icon {
+      opacity: 0.3;
+      fill: $color-accent--dark;
+    }
+  }
+
+  &__cart-icon {
+    opacity: 0.2;
   }
 }
