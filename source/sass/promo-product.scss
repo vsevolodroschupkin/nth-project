@@ -69,6 +69,7 @@
   &__tag {
     margin-bottom: 22px;
     display: block;
+    font-family: $font-title;
     font-size: 17px;
     font-weight: 700;
     line-height: 20px;
@@ -145,6 +146,7 @@
   &__price {
     margin: 0;
     margin-bottom: 26px;
+    font-family: $font-title;
     font-size: 17px;
     font-weight: 700;
     line-height: 24px;

@@ -58,7 +58,8 @@ $shadow-color--light:  rgba(0, 0, 0, 0.1);
 $overlay-color:          rgba(255, 255, 255, 0.8);
 
 // Типографика
-$font-family:            "Open Sans", "Arial", sans-serif;
+$font-regular:           "Open Sans", "Arial", sans-serif;
+$font-title:             "Open Sans Bold", "Arial", sans-serif;
 $font-size:              15px;
 $line-height:            24px;
 
@@ -67,3 +68,5 @@ $screen-s:               320px;
 $screen-m:               768px;
 $screen-l:               1150px;
 $screen-s-only:          767px;
+$retina-dpi:             144dpi;
+$retina-dppx:            1.5dppx;
