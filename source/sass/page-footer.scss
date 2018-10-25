@@ -33,7 +33,7 @@
     height: 34px;
     display: none;
 
-    &:hover .page-footer__logo-image,
+    &[href]:hover .page-footer__logo-image,
     &:focus .page-footer__logo-image {
       fill: $color-accent--darken;
     }
@@ -77,7 +77,8 @@
     color: $title-color;
     text-decoration: none;
 
-    &:active {
+    &:active,
+    &:hover {
       color: $title-color--active;
     }
 

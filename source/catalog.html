@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-  <svg style="display:none">
+  <!-- <svg style="display:none">
       <symbol viewBox="0 0 1150 34" id="bg-zigzag-fill">
         <path fill="#FFF" d="M1121.252 0c-14.375 0-14.375 14-28.749 14s-14.374-14-28.748-14-14.374 14-28.748 14c-14.375 0-14.375-14-28.75-14-14.374 0-14.374 14-28.748 14S963.135 0 948.761 0s-14.374 14-28.749 14-14.375-14-28.749-14-14.374 14-28.749 14-14.375-14-28.75-14c-14.371 0-14.371 14-28.743 14-14.375 0-14.375-14-28.75-14-14.372 0-14.372 14-28.744 14-14.374 0-14.374-14-28.747-14s-14.373 14-28.747 14C675.66 14 675.66 0 661.287 0c-14.374 0-14.374 14-28.748 14-14.375 0-14.375-14-28.751-14-14.374 0-14.374 14-28.748 14S560.666 0 546.292 0s-14.374 14-28.748 14S503.17 0 488.796 0c-14.375 0-14.375 14-28.75 14-14.376 0-14.376-14-28.753-14-14.375 0-14.375 14-28.75 14S388.168 0 373.792 0c-14.375 0-14.375 14-28.75 14S330.666 0 316.291 0s-14.375 14-28.751 14c-14.376 0-14.376-14-28.753-14-14.374 0-14.374 14-28.747 14-14.375 0-14.375-14-28.75-14s-14.375 14-28.751 14c-14.377 0-14.377-14-28.754-14s-14.377 14-28.755 14c-14.378 0-14.378-14-28.756-14S71.896 14 57.518 14C43.139 14 43.139 0 28.759 0S14.38 14 0 14v20h1150V14c-14.374 0-14.374-14-28.748-14z"/>
       </symbol>
@@ -50,7 +50,10 @@
       <symbol viewBox="0 0 32 32" id="icon-video">
         <path d="M26 15l6-4v16l-6-4v-8zm-2 0v8a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4v-8a4 4 0 0 1 4-4h10a2 2 0 0 1 2-2V7H5a1 1 0 1 1 0-2h12a1 1 0 0 1 1 1v3a2 2 0 0 1 2 2 4 4 0 0 1 4 4zm-12 0H4v8h8v-8zm8 1a1 1 0 0 0-1-1h-4a1 1 0 1 0 0 2h4a1 1 0 0 0 1-1z"/>
       </symbol>
-  </svg>
+  </svg> -->
+  <div style="display: none">
+    <include src="build/img/sprite.svg"></include>
+  </div>
   <header class="page-header">
     <nav class="main-nav main-nav--closed main-nav--nojs">
       <div class="main-nav__block header-nav">
@@ -104,6 +107,9 @@
           <li class="catalog__item card">
             <a class="card__link" href="#">
               <picture>
+                <source type="image/webp" media="(min-width: 1150px)" srcset="img/photo-hare-desktop@1x.webp 1x, img/photo-hare-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-hare-tablet@1x.webp 1x, img/photo-hare-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-hare-mobile@1x.webp 1x, img/photo-hare-mobile@2x.webp 2x">
                 <source media="(min-width: 1150px)" srcset="img/photo-hare-desktop@1x.jpg 1x, img/photo-hare-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/photo-hare-tablet@1x.jpg 1x, img/photo-hare-tablet@2x.jpg 2x">
                 <img class="card__image" src="img/photo-hare-mobile@1x.jpg" srcset="img/photo-hare-mobile@2x.jpg 2x " alt="Зайчик-попрыгайчик">
@@ -125,7 +131,10 @@
           <li class="catalog__item card">
             <a class="card__link" href="#">
               <picture>
-                <source media="(min-width: 1150px)" srcset="img/photo-bowl-desktop@1x.jpg 1x, img/photo-bowl-desktop@2x.jpg 2x ">
+                <source type="image/webp" media="(min-width: 1150px)" srcset="img/photo-bowl-desktop@1x.webp 1x, img/photo-bowl-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.webp 1x, img/photo-bowl-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-bowl-mobile@1x.webp 1x, img/photo-bowl-mobile@2x.webp 2x">
+                <source media="(min-width: 1150px)" srcset="img/photo-bowl-desktop@1x.jpg 1x, img/photo-bowl-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.jpg 1x, img/photo-bowl-tablet@2x.jpg 2x">
                 <img class="card__image" src="img/photo-bowl-mobile@1x.jpg" srcset="img/photo-bowl-mobile@2x.jpg 2x" alt="Корзинка для белья">
               </picture>
@@ -146,6 +155,9 @@
           <li class="catalog__item card">
             <a class="card__link" href="#">
               <picture>
+                <source type="image/webp" media="(min-width: 1150px)" srcset="img/photo-toys-desktop@1x.webp 1x, img/photo-toys-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-toys-tablet@1x.webp 1x, img/photo-toys-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-toys-mobile@1x.webp 1x, img/photo-toys-mobile@2x.webp 2x">
                 <source media="(min-width: 1150px)" srcset="img/photo-toys-desktop@1x.jpg 1x, img/photo-toys-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/photo-toys-tablet@1x.jpg 1x, img/photo-toys-tablet@2x.jpg 2x">
                 <img class="card__image" src="img/photo-toys-mobile@1x.jpg" srcset="img/photo-toys-mobile@2x.jpg 2x" alt="Корзинка для белья">
@@ -186,6 +198,9 @@
               </svg>
             </button>
             <picture>
+              <source type="image/webp" media="(min-width: 1150px)" srcset="img/video-desktop@1x.webp 1x, img/video-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/video-tablet@1x.webp 1x,img/video-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/video-mobile@1x.webp 1x, img/video-mobile@2x.webp 2x">
               <source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x,img/video-tablet@2x.jpg 2x">
               <img class="production__poster" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="Видеообзор нашего производства">
@@ -199,7 +214,7 @@
   </main>
   <footer class="page-footer">
     <div class="page-footer__wrapper">
-      <a class="page-footer__logo">
+      <a class="page-footer__logo" href="index.html">
         <svg class="page-footer__logo-image" width="102" height="34" alt="Интернет-магазин Mishka">
           <use xlink:href="#logo-footer"></use>
         </svg>
@@ -226,7 +241,7 @@
         </li>
       </ul>
       <div class="page-footer__copyright">
-        <a class="page-footer__copyright-link" href="http://htmlacademy.ru">Разработано <span class="visually-hidden">HTML Академия</span><svg class="page-footer__logo-htmlacademy" width="27" height="34"><use xlink:href="#logo-htmlacademy"></use></svg></a>
+        <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">Разработано <span class="visually-hidden">HTML Академия</span><svg class="page-footer__logo-htmlacademy" width="27" height="34"><use xlink:href="#logo-htmlacademy"></use></svg></a>
       </div>
     </div>
   </footer>
@@ -252,7 +267,7 @@
           </div>
         </div>
       </fieldset>
-      <button class="cart-btn" type="submit">Добавить</button>
+      <button class="cart-btn cart-modal__btn" type="submit">Добавить</button>
     </form>
   </section>
   <div class="modal-overlay"></div>
