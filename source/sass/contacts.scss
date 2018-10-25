@@ -56,25 +56,24 @@
 
   &__map-wrapper {
     width: 100%;
-    margin: 0 auto;
+    height: 457px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 40px;
     position: relative;
 
-    &::before {
-      content: "";
-      width: 67px;
-      height: 100px;
-      margin-left: -33px;
-      margin-top: -50px;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      background-image: url("/img/icon-map-pin.svg");
-      background-repeat: no-repeat;
+    @media (min-width: $screen-m) {
+      height: 457px;
+      margin-bottom: 55px;
     }
 
     @media (min-width: $screen-l) {
       margin-top: -70px;
+      width: 525px;
+      height: 457px;
     }
+
   }
 
   &__title {
@@ -178,19 +177,47 @@
   }
 
   &__map {
-    width: 100%;
-    margin: 0 auto 40px auto;
-    display: block;
+    margin-left: -160px;
+    position: absolute;
+    height: 457px;
+    top: 0;
+    left: 50%;
+    z-index: 1;
+
+    &::before {
+      content: "";
+      width: 67px;
+      height: 100px;
+      margin-left: -33px;
+      margin-top: -50px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      background-image: url("/img/icon-map-pin.svg");
+      background-repeat: no-repeat;
+    }
 
     @media (min-width: $screen-m) {
       height: 457px;
-      margin-bottom: 55px;
+      margin-left: -384px;
     }
 
     @media (min-width: $screen-l) {
       width: 525px;
       height: 457px;
+      top:0;
+      left: 0;
+      margin-left: 0;
     }
+  }
+
+  &__map-frame {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border: none;
+    z-index: 10;
   }
 
   &__btn {

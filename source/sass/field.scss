@@ -29,6 +29,10 @@
       padding: 17px 80px 17px 17px;
     }
 
+    &--error {
+      border-color: red;
+    }
+
     @media (min-width: $screen-m) {
       padding-top: 12px;
       padding-left: 18px;
