@@ -30,7 +30,7 @@
     }
 
     &--error {
-      border-color: red;
+      border-color: $input-error;
     }
 
     @media (min-width: $screen-m) {
