@@ -19,6 +19,7 @@
 
   &--opened {
     display: flex;
+    animation: appear 0.7s;
   }
 
   @media (min-width: $screen-m) {

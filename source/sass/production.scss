@@ -33,7 +33,7 @@
       width: 367px;
       padding-top: 96px;
       padding-left: 80px;
-      padding-bottom: 55px;
+      padding-bottom: 57px;
       padding-right: 57px;
       margin-left: 682px;
       margin-top: 0;
@@ -97,6 +97,7 @@
     margin-left: -50px;
     background: none;
     outline: none;
+    z-index: 90;
 
     &:hover .production__icon-play,
     &:focus .production__icon-play {
@@ -106,6 +107,37 @@
     &:active .production__icon-play {
       transform: scale(0.8);
       opacity: 0.3;
+    }
+  }
+
+  &__poster {
+    width: 260px;
+    height: 150px;
+
+    @media (min-width: $screen-m) {
+      width: 668px;
+      height: 455px;
+    }
+
+    @media (min-width: $screen-l) {
+      width: 682px;
+    }
+  }
+
+  &__video {
+    width: 260px;
+    height: 150px;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    @media (min-width: $screen-m) {
+      width: 668px;
+      height: 455px;
+    }
+
+    @media (min-width: $screen-l) {
+      width: 682px;
     }
   }
 
