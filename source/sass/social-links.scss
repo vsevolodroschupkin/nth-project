@@ -5,37 +5,37 @@
   display: flex;
   justify-content: space-between;
   list-style: none;
+}
 
-  &__link {
-    width: 28px;
-    height: 28px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
+.social-links__link {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 
-    &:hover .social-links__icon,
-    &:focus .social-links__icon {
-      fill: $color-accent--darkest;
-    }
-
-    &:active .social-links__icon {
-      opacity: 0.3;
-    }
+  &:hover .social-links__icon,
+  &:focus .social-links__icon {
+    fill: $color-accent--darkest;
   }
 
-  &__icon-insta {
-    width: 22px;
-    height: 21px;
+  &:active .social-links__icon {
+    opacity: 0.3;
   }
+}
 
-  &__icon-fb {
-    width: 15px;
-    height: 28px;
-  }
+.social-links__icon-insta {
+  width: 22px;
+  height: 21px;
+}
 
-  &__icon-twitter {
-    width: 23px;
-    height: 20px;
-  }
+.social-links__icon-fb {
+  width: 15px;
+  height: 28px;
+}
+
+.social-links__icon-twitter {
+  width: 23px;
+  height: 20px;
 }

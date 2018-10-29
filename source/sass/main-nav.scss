@@ -35,50 +35,50 @@
   @media (min-width: $screen-l) {
     width: 1050px;
   }
+}
 
-  &__block {
-    @media (min-width: $screen-l) {
-      order: 2;
-    }
+.main-nav__block {
+  @media (min-width: $screen-l) {
+    order: 2;
   }
+}
 
-  &__list.site-list {
-    @media (min-width: $screen-m) {
-      position: absolute;
-      left: 0;
-      bottom: -43px;
-    }
-
-    @media (min-width: $screen-l) {
-      margin-right: 75px;
-      position: relative;
-      bottom: 0;
-      left: 0;
-      order: 1;
-    }
-  }
-
-  &__list.service-list {
-    @media (min-width: $screen-l) {
-      position: relative;
-      order: 3;
-    }
-  }
-
-  &__notice {
-    width: 240px;
+.main-nav__list.site-list {
+  @media (min-width: $screen-m) {
     position: absolute;
-    display: none;
-    text-align: right;
+    left: 0;
+    bottom: -43px;
+  }
 
-    @media (min-width: $screen-m) {
-      display: block;
-      right: 0;
-      bottom: -43px;
-    }
+  @media (min-width: $screen-l) {
+    margin-right: 75px;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    order: 1;
+  }
+}
 
-    @media (min-width: $screen-l) {
-      right: 0;
-    }
+.main-nav__list.service-list {
+  @media (min-width: $screen-l) {
+    position: relative;
+    order: 3;
+  }
+}
+
+.main-nav__notice {
+  width: 240px;
+  position: absolute;
+  display: none;
+  text-align: right;
+
+  @media (min-width: $screen-m) {
+    display: block;
+    right: 0;
+    bottom: -43px;
+  }
+
+  @media (min-width: $screen-l) {
+    right: 0;
   }
 }

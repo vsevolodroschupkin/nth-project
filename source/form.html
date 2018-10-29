@@ -6,6 +6,10 @@
   <title>Mishka — вяжем на заказ.</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="/css/style.min.css">
+  <link rel="preload" href="/fonts/opensansbold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/opensansbold.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="/fonts/opensans.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/opensans.woff" as="font" type="font/woff" crossorigin>
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -28,9 +32,9 @@
       <div class="main-nav__block header-nav">
         <a class="header-nav__logo" href="/index.html">
           <picture>
-            <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
-            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-            <img class="header-nav__logo-image" src="img/logo-mobile.svg" alt="Интернет-магазин Mishka">
+            <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg" width="149" height="72">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" width="112" height="46">
+            <img class="header-nav__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Интернет-магазин Mishka">
           </picture>
         </a>
         <button class="header-nav__toggle header-nav__toggle--closed" type="button"><span class="visually-hidden">Открыть меню</span></button>

@@ -32,36 +32,36 @@
       background-image: url("../img/hero-desktop@2x.jpg");
     }
   }
+}
 
-  &__wrapper {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
+.hero__wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 
-    @media (min-width: $screen-m) {
-      width: 668px;
-      margin: 0 auto;
-      align-items: center;
-    }
-
-    @media (min-width: $screen-m) {
-      width: 1050px;
-    }
+  @media (min-width: $screen-m) {
+    width: 668px;
+    margin: 0 auto;
+    align-items: center;
   }
 
-  &__title {
-    width: 70%;
-    margin-bottom: 120px;
-    margin-left: auto;
-    margin-right: auto;
+  @media (min-width: $screen-m) {
+    width: 1050px;
+  }
+}
 
-    @media (min-width: $screen-m) {
-      width: 65%;
-      margin-bottom: 360px;
-    }
+.hero__title {
+  width: 70%;
+  margin-bottom: 120px;
+  margin-left: auto;
+  margin-right: auto;
 
-    @media (min-width: $screen-l) {
-      margin-bottom: 354px;
-    }
+  @media (min-width: $screen-m) {
+    width: 65%;
+    margin-bottom: 360px;
+  }
+
+  @media (min-width: $screen-l) {
+    margin-bottom: 354px;
   }
 }

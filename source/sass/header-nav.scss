@@ -18,88 +18,103 @@
     padding-bottom: 0;
     justify-content: center;
   }
+}
 
-  &__logo {
-    width: 86px;
-    height: 35px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.header-nav__logo {
+  width: 86px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    &[href]:hover .header-nav__logo-image {
-      opacity: 0.6;
-    }
+  &[href]:hover .header-nav__logo-image {
+    opacity: 0.6;
+  }
 
-    &[href]:active .header-nav__logo-image {
-      opacity: 0.3;
-    }
+  &[href]:active .header-nav__logo-image {
+    opacity: 0.3;
+  }
 
-    @media (min-width: $screen-m) {
-      margin-right: 205px;
-      width: 112px;
-      height: 46px;
-    }
+  @media (min-width: $screen-m) {
+    margin-right: 205px;
+    width: 112px;
+    height: 46px;
+  }
 
-    @media (min-width: $screen-l) {
-      width: 149px;
-      height: 72px;
-      margin-right: 100px;
+  @media (min-width: $screen-l) {
+    width: 149px;
+    height: 72px;
+    margin-right: 100px;
+  }
+}
+
+.header-nav__logo-image {
+  width: 86px;
+  height: 35px;
+
+  @media (min-width: $screen-m) {
+    width: 112px;
+    height: 46px;
+  }
+
+  @media (min-width: $screen-l) {
+    width: 149px;
+    height: 72px;
+  }
+}
+
+.header-nav__toggle {
+  position: absolute;
+  border: none;
+  background-color: $title-color;
+
+  &--opened {
+    width: 25px;
+    height: 2px;
+    top: 38px;
+    right: 28px;
+    transform: rotate(45deg);
+
+    &::before {
+      content: "";
+      width: 25px;
+      height: 2px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: $title-color;
+      transform: rotate(90deg);
     }
   }
 
-  &__toggle {
-    position: absolute;
-    border: none;
-    background-color: $title-color;
+  &--closed {
+    width: 20px;
+    height: 2px;
+    top: 32px;
+    right: 30px;
 
-    &--opened {
-      width: 25px;
-      height: 2px;
-      top: 38px;
-      right: 28px;
-      transform: rotate(45deg);
-
-      &::before {
-        content: "";
-        width: 25px;
-        height: 2px;
-        position: absolute;
-        top: 0;
-        left: 0;
-        background-color: $title-color;
-        transform: rotate(90deg);
-      }
-    }
-
-    &--closed {
+    &::before {
+      content: "";
       width: 20px;
       height: 2px;
-      top: 32px;
-      right: 30px;
-
-      &::before {
-        content: "";
-        width: 20px;
-        height: 2px;
-        position: absolute;
-        top: 6px;
-        left: 0;
-        background-color: $title-color;
-      }
-
-      &::after {
-        content: "";
-        width: 20px;
-        height: 2px;
-        position: absolute;
-        top: 12px;
-        left: 0;
-        background-color: $title-color;
-      }
+      position: absolute;
+      top: 6px;
+      left: 0;
+      background-color: $title-color;
     }
 
-    @media (min-width: $screen-m) {
-      display: none;
+    &::after {
+      content: "";
+      width: 20px;
+      height: 2px;
+      position: absolute;
+      top: 12px;
+      left: 0;
+      background-color: $title-color;
     }
+  }
+
+  @media (min-width: $screen-m) {
+    display: none;
   }
 }

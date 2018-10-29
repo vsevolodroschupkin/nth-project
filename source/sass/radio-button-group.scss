@@ -6,10 +6,8 @@
   @media (min-width: $screen-m) {
     margin-bottom: 23px;
   }
+}
 
-  &__item {
-    &:not(:last-child) {
-      margin-bottom: 20px;
-    }
-  }
+.radio-button-group__item:not(:last-child) {
+  margin-bottom: 20px;
 }

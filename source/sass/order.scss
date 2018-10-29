@@ -27,24 +27,24 @@
   @media (min-width: $screen-l) {
     padding-top: 125px;
   }
+}
 
-  &__text {
-    width: 80%;
-    margin-top: 0;
-    margin-bottom: 35px;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 13px;
+.order__text {
+  width: 80%;
+  margin-top: 0;
+  margin-bottom: 35px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 13px;
 
-    @media (min-width: $screen-m) {
-      font-size: 17px;
-      line-height: 30px;
-      width: 675px;
-      margin-bottom: 10px;
-    }
+  @media (min-width: $screen-m) {
+    font-size: 17px;
+    line-height: 30px;
+    width: 675px;
+    margin-bottom: 10px;
+  }
 
-    @media (min-width: $screen-l) {
-      width: 700px;
-    }
+  @media (min-width: $screen-l) {
+    width: 700px;
   }
 }

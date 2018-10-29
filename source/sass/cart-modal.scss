@@ -15,7 +15,7 @@
   left: 50%;
   background-color: $bg-color;
   box-shadow: 0 5px 10px 0 $shadow-color;
-  z-index: 60;
+  z-index: 100;
 
   &--opened {
     display: flex;
@@ -30,57 +30,58 @@
     padding-right: 103px;
     padding-left: 103px;
   }
+}
 
-  &__block {
-    padding: 0;
-    margin: 0;
-    margin-bottom: 30px;
-    border: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+
+.cart-modal__block {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 30px;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cart-modal__title {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-family: $font-title;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: center;
+  color: $title-color;
+  text-transform: uppercase;
+
+  & br {
+    @media (min-width: $screen-m) {
+      display: none;
+    }
   }
 
-  &__title {
-    margin-top: 0;
-    margin-bottom: 16px;
-    font-family: $font-title;
-    font-size: 25px;
-    font-weight: 700;
+  @media (min-width: $screen-m) {
+    font-size: 30px;
+    line-height: 57px;
+  }
+}
+
+.cart-modal__legend {
+  margin: 0 auto 25px auto;
+
+  @media (min-width: $screen-m) {
+    margin-bottom: 19px;
+    font-size: 17px;
     line-height: 30px;
-    text-align: center;
-    color: $title-color;
-    text-transform: uppercase;
-
-    & br {
-      @media (min-width: $screen-m) {
-        display: none;
-      }
-    }
-
-    @media (min-width: $screen-m) {
-      font-size: 30px;
-      line-height: 57px;
-    }
   }
+}
 
-  &__legend {
-    margin: 0 auto 25px auto;
+.cart-modal__form {
+  display: flex;
+  flex-direction: column;
+}
 
-    @media (min-width: $screen-m) {
-      margin-bottom: 19px;
-      font-size: 17px;
-      line-height: 30px;
-    }
-  }
-
-  &__form {
-    display: flex;
-    flex-direction: column;
-  }
-
-  &__radio-wrapper {
-    display: flex;
-    justify-content: space-between;
-  }
+.cart-modal__radio-wrapper {
+  display: flex;
+  justify-content: space-between;
 }
