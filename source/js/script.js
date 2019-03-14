@@ -9,8 +9,10 @@ var order = document.querySelector('.order__form');
 var name = document.querySelectorAll('[name=name]');
 var email = document.querySelector('[name=e-mail]');
 
+//проверяем на поддержку js
 navMain.classList.remove('main-nav--nojs');
 
+//
 navToggle.addEventListener('click', function() {
 if (navMain.classList.contains('main-nav--closed')) {
     navMain.classList.remove('main-nav--closed');
@@ -51,6 +53,7 @@ if (modalOverlay) {
   });
 };
 
+//закрывает модальное окно по ESC
 window.addEventListener('keydown', function (evt) {
   if (evt.keyCode === 27) {
     evt.preventDefault();
